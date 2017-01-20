@@ -1,0 +1,17 @@
+@mixin font-normal {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+}
+
+@mixin font-h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+}
+
+@mixin font-info {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}

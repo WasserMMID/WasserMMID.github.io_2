@@ -1,0 +1,106 @@
+.highcharts-legend-box{
+	visibility: hidden;
+}
+
+.highcharts-button-symbol{
+	visibility: hidden;
+}
+
+.return_button {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+
+}
+
+.insel_detail_con {
+	min-height: 965px;
+
+  .intro_nav {
+    min-height: 966px;
+  }
+
+	.insel_name {
+		display: block;
+		position: absolute;
+		font-size: 45px;
+		top: 50px;
+		left: 370px;
+		width: 100%;
+		font-family: 'Alegreya Sans', sans-serif;
+		color: #5990B7;
+	}
+}
+
+.uebersicht {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 430px;
+
+  .haushalt {
+    width: 320px;
+    height: 150px;
+    margin: 55px auto 40px;
+    text-align: center;
+  }
+
+  #wassertropfen_frisch{
+  	width:160px;
+  	height:150px;
+  	display: block;
+  	float: left;
+    margin: 0 auto;
+    background-size: 80px;
+    background-position: center top;
+  	background-image: url("../img/layout/wassertropfen_frisch.svg");
+  	background-repeat: no-repeat;
+  }
+
+  #verbrauch_pro_person, #klaranlage_person {
+  font-family: Arial;
+  color: white;
+  font-size: 16pt;
+  margin-top: 45px;
+  text-align: center;
+  }
+
+  #wassertropfen_verbraucht{
+  	width:160px;
+  	height:150px;
+  	display: block;
+  	float: left;
+    background-size: 80px;
+    background-position: center top;
+    background-image: url("../img/layout/wassertropfen_verschmutzt.svg");
+    background-repeat: no-repeat;
+  }
+
+  .bezeichnung{
+    display: block;
+    width: 120px;
+    text-align: center;
+    padding: 0 20px;
+  	font-size: 8pt;
+  	color: black;
+    margin-top: 45px;
+  }
+}
+
+.intro_detail {
+  padding: 0 40px;
+}
+
+.highcharts-credits {
+  display: none;
+}
+
+.footer {
+	display: block;
+	float: left;
+	bottom: 0;
+	z-index: 400;
+}

@@ -1,0 +1,125 @@
+@import "font.scss";
+@import "island.scss";
+@import "intro.scss";
+
+body {
+  background: #DDDEDE;
+  margin: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+  display: block;
+  width: 100%;
+  @include font-info;
+}
+
+//.islands {
+//  display: block;
+//  position: absolute;
+//  height: 100%;
+//  width: 100%;
+//  top: 0;
+//  //background: #123;
+//
+//  background-image: url('../img/boden.svg');
+//  background-position: right bottom;
+//  background-size: 100%;
+//  //background-repeat: no-repeat;
+//
+//}
+
+footer {
+  display: block;
+  //position: absolute;
+  //bottom: 0;
+  width: 100%;
+  min-height: 78px;
+  background: #000000;
+  text-align: right;
+  @include font-info;
+  z-index: 300;
+
+  a {
+    @include font-info;
+    display: block;
+    float: right;
+    width: 200px;
+    height: 78px;
+    margin-right: 250px;
+    line-height: 78px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.siteInfo {
+  display: block;
+  float: left;
+  width: 600px;
+  height: 70px;
+  margin: auto;
+  margin-top: 180px;
+  color: #fff;
+  margin-top: 0;
+  margin-left: 250px;
+
+  img, p {
+    display: block;
+    float: left;
+  }
+
+  p {
+    @include font-info;
+    width: 490px;
+    margin-left: 30px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  img {
+    width: 50px;
+    margin: 10px 0 0;
+  }
+}
+
+.container {
+  min-height: 100%;
+}
+
+@import "wasserfall.scss";
+
+#klaranlage  {
+  background-color: grey;
+  position:absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 100px;
+  height: 10px;
+  -webkit-animation-name: routieren; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  animation-name: routieren;
+  animation-iteration-count: infinite;
+
+  /*Perspektive funktioniert leider nicht*/
+  -webkit-perspective: 2600px;
+  -webkit-perspective-origin: 50% -1400px;
+  }
+
+@-webkit-keyframes routieren {
+  0%   {transform: rotateY(0deg);}
+  100%  {transform: rotateY(360deg);}
+
+}
+
+.display_on {
+  display: block;
+}
+
+.display_off {
+  display: none;
+}
+
+@import "touchpoint.scss";
+@import "intro_detail.scss";
+@import "insel_detail.scss";

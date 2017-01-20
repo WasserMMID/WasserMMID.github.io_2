@@ -1,0 +1,5 @@
+.element:hover {
+	-webkit-box-shadow: -2px -1px 300px 200px rgba(0,0,0,0.58);
+-moz-box-shadow: -2px -1px 300px 200px rgba(0,0,0,0.58);
+box-shadow: -2px -1px 300px 200px rgba(0,0,0,0.58);
+}

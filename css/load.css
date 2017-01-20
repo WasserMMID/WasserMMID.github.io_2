@@ -1,0 +1,123 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("../img/bg.png");
+  font-family: 'Alegreya Sans', sans-serif; }
+
+.siteDes {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  margin-top: 180px;
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 30px; }
+  .siteDes h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin-bottom: 50px; }
+  .siteDes p {
+    display: block;
+    margin-bottom: 10px; }
+  .siteDes #exploreButton {
+    width: 250px;
+    height: 60px;
+    padding: 15px;
+    margin: 30px auto 40px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: none; }
+    .siteDes #exploreButton:hover {
+      color: #fff;
+      border: 1px solid #0e4f61;
+      -webkit-box-shadow: 0 0 5px #14738e; }
+
+.siteInfo {
+  display: block;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  margin-top: 150px; }
+  .siteInfo img, .siteInfo p {
+    display: block;
+    float: left; }
+  .siteInfo img {
+    width: 80px; }
+  .siteInfo p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    width: 490px;
+    margin-left: 30px; }
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+  background: #000000;
+  text-align: right;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 14px;
+  line-height: 25px; }
+  footer a {
+    display: block;
+    margin-right: 250px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none; }
+
+.siteInfo2 {
+  color: #fff;
+  margin-top: 0;
+  margin-left: 250px; }
+  .siteInfo2 img {
+    width: 50px;
+    margin: 5px 0; }
+  .siteInfo2 p {
+    margin-left: 20px;
+    text-align: left; }
+
+#introYN {
+  width: 600px;
+  height: 68px;
+  margin: auto;
+  text-align: center; }
+  #introYN .buttonRow {
+    width: 600px;
+    margin: auto;
+    min-height: 50px;
+    margin-top: 15px; }
+    #introYN .buttonRow a {
+      display: block;
+      float: left;
+      margin: 0 25px 0 125px;
+      padding: 15px;
+      color: #000;
+      width: 118px;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid #000;
+      border-radius: 5px; }
+      #introYN .buttonRow a:last-child {
+        margin: 0 125px 0 25px; }
+      #introYN .buttonRow a:hover {
+        color: #fff;
+        border: 1px solid #0e4f61;
+        -webkit-box-shadow: 0 0 5px #14738e; }
+
+.display_on {
+  display: block; }
+
+.display_off {
+  display: none; }
+
+/*# sourceMappingURL=load.css.map */

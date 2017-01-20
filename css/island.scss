@@ -1,0 +1,490 @@
+$base_blue: #5B8FB1;
+
+.islands_nav {
+  display: block;
+  position: relative;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 70px;
+  background: url('../img/bg.png');
+  background-position: top center;
+  margin-bottom: 50px;
+
+  ul {
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    padding: 20px 0;
+
+    li {
+      display: block;
+      float: left;
+      width: 13%;
+      text-align: center;
+      margin: 0 2%;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: #fff;
+      text-decoration: none;
+
+
+      &:hover, &.active {
+        background: #fff;
+        color: $base_blue;
+      }
+    }
+  }
+}
+
+.islands {
+  display: block;
+  position:relative;
+  z-index: 1;
+  width: 100vw;
+  min-height: 600px;
+}
+
+
+.island_des {
+  position: absolute;
+  right: 150px;
+  float: right;
+  width: 300px;
+  height: 240px;
+  top: 300px;
+  text-align: center;
+  color: #fff;
+  background-image: url('../img/layout/island_des_bg.png');
+  background-position: bottom center;
+  background-size: 140px;
+  background-repeat: no-repeat;
+  z-index: 100;
+
+  h2 {
+    color: $base_blue;
+    font-size: 25px;
+    padding-bottom: 55px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+
+.island {
+  display: block;
+  position: absolute;
+  //background: url("../img/Bulgarien.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    //display: block;
+  }
+}
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+@for $i from 1 through 19 {
+
+  $islandWidth: 50px * (2.9 - $i*0.1);
+  $islandWidth2: 40px * (2.9 - $i*0.1);
+  $islandHeight: 70px * (2.9 - $i*0.1);
+  $islandHeight2: 60px * (2.9 - $i*0.1);
+
+  .island_#{$i} {
+    display: block;
+    position: absolute;
+
+    width: $islandWidth;
+    height: $islandHeight;
+    top: 24% * (2.9 - $i*0.1) ;
+    left: 43% * (sqrt($i)*0.5)-18%;
+    z-index: -100 * $i;
+
+    animation-name: positionChange#{$i}, sizeChange#{$i};
+    animation-duration: 3s, 5s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: 1, infinite;
+
+    -webkit-animation-name: positionChange#{$i}, sizeChange#{$i};
+    -webkit-animation-duration: 3s, 5s;
+    -webkit-animation-timing-function: linear, linear;
+    -webkit-animation-iteration-count: 1, infinite;
+  }
+
+  @keyframes positionChange#{$i} {
+    0% {
+      top: random(1000)+ px;
+      left:  random(1000) + px;
+      z-index:  random(300);
+    }
+
+    100% {
+      top: 24% * (2.9 - $i*0.1) ;
+      left: 43% * (sqrt($i)*0.5)-18%;
+    }
+  }
+
+  @-webkit-keyframes positionChange#{$i} {
+    0% {
+      top: random(1000)+ px;
+      left:  random(1000) + px;
+      z-index:  random(300);
+    }
+
+    100% {
+      top: 24% * (2.9 - $i*0.1) ;
+      left: 43% * (sqrt($i)*0.5)-18%;
+    }
+  }
+
+  @keyframes sizeChange#{$i} {
+    0% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+    50% {
+      width: $islandWidth2;
+      height: $islandHeight2;
+    }
+    100% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+  }
+
+  @-webkit-keyframes sizeChange#{$i} {
+    0% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+    50% {
+      width: $islandWidth2;
+      height: $islandHeight2;
+    }
+    100% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+  }
+}
+
+@for $i from 19 through 28 {
+
+  $islandWidth: 40px;
+  $islandWidth2: 37px;
+  $islandHeight: 56px;
+  $islandHeight2: 51px;
+
+  .island_#{$i} {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 56px;
+    top: 24% * (2.9 - $i*0.1) ;
+    left: 43% * (sqrt($i)*0.5)-18%;
+    z-index: -100 * $i;
+    //animation: 5s sizeChange#{$i} infinite;
+    //height: 375px * (1 - $i*0.1);
+    width: $islandWidth;
+    height: $islandHeight;
+
+    animation-name: positionChange#{$i}, sizeChange#{$i};
+    animation-duration: 3s, 5s;
+    animation-timing-function: linear, linear;
+    animation-delay: 0, 3s;
+    animation-iteration-count: 1, infinite;
+
+    //animation: 5s sizeChange#{$i} infinite;
+
+    -webkit-animation-name: positionChange#{$i}, sizeChange#{$i};
+    -webkit-animation-duration: 3s, 5s;
+    -webkit-animation-timing-function: linear, linear;
+    -webkit-animation-delay: 0, 3s;
+    -webkit-animation-iteration-count: 1, infinite;
+  }
+
+  @keyframes positionChange#{$i} {
+    0% {
+      top: random(800)+ px;
+      left:  random(1000) + px;
+      z-index:  random(300);
+    }
+
+    100% {
+      top: 24% * (2.9 - $i*0.1) ;
+      left: 43% * (sqrt($i)*0.5)-18%;
+    }
+  }
+
+  @-webkit-keyframes positionChange#{$i} {
+    0% {
+      top: random(800)+ px;
+      left:  random(1000) + px;
+      z-index:  random(300);
+    }
+
+    100% {
+      top: 24% * (2.9 - $i*0.1) ;
+      left: 43% * (sqrt($i)*0.5)-18%;
+    }
+  }
+
+  @keyframes sizeChange#{$i} {
+    0% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+    50% {
+      width: $islandWidth2;
+      height: $islandHeight2;
+    }
+    100% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+  }
+
+  @-webkit-keyframes sizeChange#{$i} {
+    0% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+    50% {
+      width: $islandWidth2;
+      height: $islandHeight2;
+    }
+    100% {
+      width: $islandWidth;
+      height: $islandHeight;
+    }
+  }
+}
+
+@for $i from 1 through 28 {
+
+  .island_des_nr_#{$i} {
+    display: block;
+    position: absolute;
+    left: 43% * (sqrt($i)*0.5)-18%;
+    top: 24% * (2.9 - $i*0.1) - 5;
+    width: 50px * (2.9 - $i*0.1);
+    text-align: center;
+    color: $base_blue;
+    font-size: 20 * (1 - $i*0.1) + px;
+    z-index: -1000 * $i;
+    opacity: 1;
+
+    animation: 4s fontChange;
+    animation-iteration-count: 1;
+
+    -webkit-animation: 4s fontChange;
+    -webkit-animation-iteration-count: 1;
+
+    @keyframes fontChange {
+      0% {
+        opacity: 0;
+      }
+
+      90% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fontChange {
+      0% {
+        opacity: 0;
+      }
+
+      90% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.island_des_title {
+  display: block;
+  position: absolute;
+  width: 600px;
+  min-height: 90px;
+  top: 120px;
+  left: 70px;
+  font-size: 25px;
+  color: #5990B7;
+
+  p + p {
+    font-size: 14px;
+  }
+}
+
+//@for $i from 1 through 5 {
+//
+//  .island_des_title_#{$i} {
+//    display: block;
+//    position: absolute;
+//    width: 600px;
+//    min-height: 90px;
+//    top: 120px;
+//    left: 70px;
+//    font-size: 25px;
+//    color: #5990B7;
+//  }
+//}
+
+
+@for $i from 6 through 28 {
+
+  .island_des_nr_#{$i} {
+    font-size: 6px;
+    background: url('../img/');
+  }
+}
+
+.useless {
+  //.island_1 {
+  //  background: url("../img/laender/Belgien.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_2 {
+  //  background: url("../img/laender/Bulgarien.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_3 {
+  //  background: url("../img/laender/Dänemark.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_4 {
+  //  background: url("../img/laender/Deutschland.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_5 {
+  //  background: url("../img/laender/Estland.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_6 {
+  //  background: url("../img/laender/Finnland.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_7 {
+  //  background: url("../img/laender/Frankreich.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_8 {
+  //  background: url("../img/laender/Griechenland.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_9 {
+  //  background: url("../img/laender/Irland.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_10 {
+  //  background: url("../img/laender/Italien.svg");
+  //  //left: random(1024) + px;
+  //}
+  //
+  //.island_11 {
+  //  background: url("../img/laender/Kroatien.svg");
+  //  //left: random(1024) + px;
+  //
+  //}
+  //.island_12 {
+  //  background: url("../img/laender/Lettland.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_13 {
+  //  background: url("../img/laender/Litauen.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_14 {
+  //  background: url("../img/laender/Luxemburg.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_15 {
+  //  background: url("../img/laender/Malta.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_16 {
+  //  background: url("../img/laender/Niederlande.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_17 {
+  //  background: url("../img/laender/Oesterreich.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_18 {
+  //  background: url("../img/laender/Polen.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_19 {
+  //  background: url("../img/laender/Portugal.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_20 {
+  //  background: url("../img/laender/Romaenien.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_21 {
+  //  background: url("../img/laender/Schweden.svg");
+  //  //left: random(1024) + px;
+  //
+  //}
+  //.island_22 {
+  //  background: url("../img/laender/Slowakei.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_23 {
+  //  background: url("../img/laender/Slowenien.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_24 {
+  //  background: url("../img/laender/Spanien.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_25 {
+  //  background: url("../img/laender/Tschechische.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_26 {
+  //  background: url("../img/laender/UK.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_27 {
+  //  background: url("../img/laender/Ungarn.svg");
+  //  //left: random(1024) + px;
+  //}
+  //.island_28 {
+  //  background: url("../img/laender/Zypern.svg");
+  //
+  //  //left: random(1024) + px;
+  //}
+
+  //@for $i from 1 through 28 {
+  //
+  //  .island_#{$i} {
+  //    background-repeat: no-repeat;
+  //  }
+  //}
+}

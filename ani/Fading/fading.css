@@ -1,0 +1,9 @@
+body {
+	opacity: 1;
+}
+
+
+
+.allebilder:hover img:not(:hover){
+	opacity: 0.2;
+}

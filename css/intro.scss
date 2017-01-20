@@ -1,0 +1,182 @@
+.container {
+  min-height: 966px;
+  //height: auto;
+}
+
+.introBg {
+  width: 100%;
+
+  left: 0;
+  text-align: left;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  img {
+    display: block;
+    position: absolute;
+    width: 900px;
+    top: 230px;
+    left: 50px;
+  }
+
+  //background-image: url('../img/boden.svg');
+  //background-size: 900px auto;
+  //
+  //&.greyEffect {
+  //  background-image: url('../img/zwei_inseln_intro.svg');
+  //}
+}
+
+
+
+.regen {
+  display: block;
+  position: absolute;
+  top: 160px;
+  left: 300px;
+  width: 200px;
+  height: 100px;
+}
+
+.regen-eins {
+    position: relative;
+    -webkit-animation-name: regen; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: regen;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.regen-zwei {
+    position: relative;
+    -webkit-animation-name: regen; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: regen;
+    animation-duration: 0.8s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+
+.regen-drei {
+    position: relative;
+    -webkit-animation-name: regen; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: regen;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+.regen-vier {
+    position: relative;
+    -webkit-animation-name: regen; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: regen;
+    animation-duration: 0.8s;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+.regen-funf {
+    position: relative;
+    -webkit-animation-name: regen; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: regen;
+    animation-duration: 0.8s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+
+.regen-sechs {
+    position: relative;
+    -webkit-animation-name: regen; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-name: regen;
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes regen {
+    0%   {left:0px; top:0px;}
+    100%  {opacity: 0;
+    	left:30px; top:200px;}
+}
+
+.industrie {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  //width: 100px;
+}
+
+.wolke1 {
+    position: relative;
+    -webkit-animation-name: rauch; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: rauch;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.wolke2 {
+    position: relative;
+    -webkit-animation-name: rauch; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: rauch;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.wolke3 {
+    position: relative;
+    -webkit-animation-name: rauch; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: rauch;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rauch {
+    0%   {width: 0px; left:300px; top:300px;}
+    100%  {width: 80px; opacity: 0;
+    	left:150px; top:10px;}
+}
+
+.trans {
+  position: absolute;
+  left: 1110px;
+  top: 30px;
+}
+
+.pfeil-eins {
+    position: relative;
+    -webkit-animation-name: transpiration-pfeil; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: transpiration-pfeil;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes transpiration-pfeil {
+  0%  {
+    left: 0px;
+    top:200px;
+  }
+  100%  {
+    opacity: 0;
+    left:0px; top:0px;
+  }
+}

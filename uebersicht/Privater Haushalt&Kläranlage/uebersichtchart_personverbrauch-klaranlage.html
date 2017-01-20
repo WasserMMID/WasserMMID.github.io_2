@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<style>
+
+p{
+font-family: Arial;
+color: white;
+font-size: 16pt;
+margin-top: 70px;
+text-align: center;
+}
+
+#wassertropfen_frisch{
+	width:100px;
+	height:200px;
+	display: block;
+	float: left;
+	background-image: url("wassertropfen_frisch.svg");
+	background-repeat: no-repeat;
+}
+
+#wassertropfen_verbraucht{
+	width:100px;
+	height:200px;
+	display: block;
+	float: left;
+	margin-left: 10%;
+background-image: url("wassertropfen_verschmutzt.svg");
+background-repeat: no-repeat;
+}
+
+.bezeichnung{
+	font-size: 8pt;
+	color: black;
+	text-align: left;
+}
+
+</style>
+<div>
+
+<div id="wassertropfen_frisch">
+<p id="verbrauch_pro_person"></p>
+<p class="bezeichnung">Verbrauch pro Bewohner im Jahr 2013 aus der öffentlichen Wasserversorgung/Jahr</p>
+</div>
+
+<div id="wassertropfen_verbraucht">
+<p id="klaranlage_person"></p>
+<p class="bezeichnung">Anteil der Kläranlagenanschlüsse<p>
+</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="uebersichtchart_personalverbrauch-klaranlage-belgien.js"></script>
+</body>
+
+</html>
