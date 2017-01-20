@@ -62,26 +62,27 @@ $('.touchpoint7').click(function() {
   $('.introBg img').attr('src','../img/layout_insel_detail/Abfluss.svg');
 });
 
+//intro
 $('.intro_touchpoint1').click(function() {
-  $('.introBg img').attr('src','img/insel.svg');
+  $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
 });
 $('.intro_touchpoint2').click(function() {
-  $('.introBg img').attr('src','img/layout_insel_detail/Ressourcen.svg');
+  $('.introBg img').attr('src','img/intro/intro_Wasserressourcen.svg');
 });
 $('.intro_touchpoint3').click(function() {
-  $('.introBg img').attr('src','img/layout_insel_detail/Verbrauch.svg');
+  $('.introBg img').attr('src','img/intro/intro_Mensch.svg');
 });
 $('.intro_touchpoint4').click(function() {
-  $('.introBg img').attr('src','img/layout_insel_detail/Industrie.svg');
+  $('.introBg img').attr('src','img/intro/intro_Wirtschaft.svg');
 });
 $('.intro_touchpoint5').click(function() {
-  $('.introBg img').attr('src','img/layout_insel_detail/Entnahme.svg');
+  $('.introBg img').attr('src','img/intro/intro_Entnahme.svg');
 });
 $('.intro_touchpoint6').click(function() {
-  $('.introBg img').attr('src','img/layout_insel_detail/Klaeranlage.svg');
+  $('.introBg img').attr('src','img/intro/intro_Klaeranlage.svg');
 });
 $('.intro_touchpoint7').click(function() {
-  $('.introBg img').attr('src','img/layout_insel_detail/Abfluss.svg');
+  $('.introBg img').attr('src','img/intro/intro_abfluss.svg');
 });
 
 

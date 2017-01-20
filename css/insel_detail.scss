@@ -16,10 +16,45 @@
 
 }
 
+.insel_detail_con .introBg {
+  width: 100%;
+
+  left: 0;
+  text-align: left;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  img {
+    display: block;
+    position: absolute;
+    width: 900px;
+		top: 230px;
+		left: 50px;
+  }
+}
+
 .insel_detail_con {
 	min-height: 965px;
 
+	.introBg {
+	  width: 100%;
+
+	  left: 0;
+	  text-align: left;
+	  background-position: right bottom;
+	  background-repeat: no-repeat;
+
+	  img {
+	    display: block;
+	    position: absolute;
+	    width: 900px;
+			top: 230px;
+			left: 50px;
+	  }
+	}
+
   .intro_nav {
+		top: 0;
     min-height: 966px;
   }
 
