@@ -1,12 +1,25 @@
 $(function () {
-    var item=["Bulgarien",106.7,558,4919,53,3.1,81,108];
+    var item = ["Tschechische Republik",16,371,1279,47,7.6,42.9,79.8,16];
 
-    var value= item[5];
 
-    var name=item[0];
-    var value=item[4];
+    var landername = item[0];
+    var suesswasserressourcen = item[1];
+    var grundwasserentnahme = item[2];
+    var oberflaechenwasserentnahme = item[3];
+    var verbrauch_PrivateHaushalte = item[4];
+    var verbrauch_Landwirtschaft = item[5];
+    var verbrauch_Industrie = item[6];
+    var klaeranlagen = item[7];
+    var abfluss = item[8];
 
-    //resource
+    $('.insel_name').html(landername);
+
+
+    //übersicht 4 7
+    $('#verbrauch_pro_person').html( verbrauch_PrivateHaushalte +' m &sup3');
+  	$('#klaranlage_person').html( klaeranlagen +' %');
+
+    //resource_übersicht 1 8
     Highcharts.chart('uebersicht_resourcen', {
         chart: {
             type: 'bar'
@@ -61,7 +74,7 @@ $(function () {
         series: [{
             name: 'Milliarden m³',
             // data: [19.9,15.6]
-            data: [19.9,value]
+            data: [suesswasserressourcen,abfluss]
         }]
     });
 
@@ -108,8 +121,8 @@ $(function () {
                 name: 'Luxemburg',
                 y: 96.3
             }, {
-                name: name,
-                y: 84
+                name: landername,
+                y: klaeranlagen
             }, {
                 name: 'Rumänien',
                 y: 35.5
@@ -171,7 +184,7 @@ $(function () {
         },
         series: [{
             name: 'Millionen m³',
-            data: [602,4480,9,103]
+            data: [grundwasserentnahme,oberflaechenwasserentnahme,verbrauch_Landwirtschaft,verbrauch_Industrie]
         }]
     });
 
@@ -218,19 +231,14 @@ $(function () {
                 name: 'Irland',
                 y: 144
             }, {
-                name: name,
-                // y:  value
-                // name: JSON.parse("'" + name + "'"),
-                y: value
+                name: landername,
+                y: verbrauch_PrivateHaushalte
             }, {
                 name: 'Belgien',
                 y: 26
             }],
         }],
-
-
-            }
-
+      }
     );
 
     //Industrie_1
@@ -250,7 +258,7 @@ $(function () {
             }
 
         },
-     legend: {
+        legend: {
            enabled: false
             },
         plotOptions: {
@@ -276,8 +284,8 @@ $(function () {
                 name: 'Polen',
                 y: 145.2
             }, {
-                name: name,
-                y: 9
+                name: landername,
+                y: verbrauch_Landwirtschaft
             }, {
                 name: 'Kroatien',
                 y: 0
@@ -302,7 +310,7 @@ $(function () {
             }
 
         },
-     legend: {
+        legend: {
            enabled: false
             },
         plotOptions: {
@@ -328,8 +336,8 @@ $(function () {
                 name: 'Spanien',
                 y: 361.9
             }, {
-                name: name,
-                y: 103
+                name: landername,
+                y: verbrauch_Industrie
             }, {
                 name: 'Malta',
                 y: 2.1
@@ -355,7 +363,7 @@ $(function () {
             }
 
         },
-     legend: {
+        legend: {
            enabled: false
             },
         plotOptions: {
@@ -381,8 +389,8 @@ $(function () {
                 name: 'Spanien',
                 y: 6884
             }, {
-                name: name,
-                y: 602
+                name: landername,
+                y: grundwasserentnahme
             }, {
                 name: 'Luxemburg',
                 y: 25
@@ -432,8 +440,8 @@ $(function () {
                 name: 'Spanien',
                 y: 30465
             }, {
-                name: name,
-                y: 4480
+                name: landername,
+                y: oberflaechenwasserentnahme
             }, {
                 name: 'Malta',
                 y: 0
@@ -486,8 +494,8 @@ $(function () {
                 name: 'Schweden',
                 y: 186.2
             }, {
-                name: name,
-                y: 15.6
+                name: landername,
+                y: abfluss
             }, {
                 name: 'Malta',
                 y: 0.1
@@ -539,8 +547,8 @@ $(function () {
                 name: 'Deutschland',
                 y: 188
             }, {
-                name: name,
-                y: 19.9
+                name: landername,
+                y: suesswasserressourcen
             }, {
                 name: 'Malta',
                 y: 0.1

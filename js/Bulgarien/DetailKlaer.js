@@ -1,4 +1,0 @@
-$(function () {
-    // Create the chart
-    
-});
