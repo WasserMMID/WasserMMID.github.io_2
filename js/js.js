@@ -12,37 +12,37 @@ $('.touchpoint1').click(function() {
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail1').removeClass('display_off').addClass('display_on');
 });
-$('.touchpoint2').click(function() {
+$('.touchpoint2, .divpoint2').click(function() {
   $('.touchpoint').removeClass('active');
   $('.touchpoint2').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail2').removeClass('display_off').addClass('display_on');
 });
-$('.touchpoint3').click(function() {
+$('.touchpoint3, .divpoint3').click(function() {
   $('.touchpoint').removeClass('active');
   $('.touchpoint3').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail3').removeClass('display_off').addClass('display_on');
 });
-$('.touchpoint4').click(function() {
+$('.touchpoint4, .divpoint4').click(function() {
   $('.touchpoint').removeClass('active');
   $('.touchpoint4').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail4').removeClass('display_off').addClass('display_on');
 });
-$('.touchpoint5').click(function() {
+$('.touchpoint5, .divpoint5').click(function() {
   $('.touchpoint').removeClass('active');
   $('.touchpoint5').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail5').removeClass('display_off').addClass('display_on');
 });
-$('.touchpoint6').click(function() {
+$('.touchpoint6, .divpoint6').click(function() {
   $('.touchpoint').removeClass('active');
   $('.touchpoint6').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail6').removeClass('display_off').addClass('display_on');
 });
-$('.touchpoint7').click(function() {
+$('.touchpoint7, .divpoint7').click(function() {
   $('.touchpoint').removeClass('active');
   $('.touchpoint7').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
@@ -57,22 +57,22 @@ $('.touchpointBg').click(function() {
 $('.touchpoint1').click(function() {
   $('.introBg img').attr('src','../img/insel.svg');
 });
-$('.touchpoint2').click(function() {
+$('.touchpoint2, .divpoint2').click(function() {
   $('.introBg img').attr('src','../img/layout_insel_detail/Ressourcen.svg');
 });
-$('.touchpoint3').click(function() {
+$('.touchpoint3, .divpoint3').click(function() {
   $('.introBg img').attr('src','../img/layout_insel_detail/Verbrauch.svg');
 });
-$('.touchpoint4').click(function() {
+$('.touchpoint4, .divpoint4').click(function() {
   $('.introBg img').attr('src','../img/layout_insel_detail/Industrie.svg');
 });
-$('.touchpoint5').click(function() {
+$('.touchpoint5, .divpoint5').click(function() {
   $('.introBg img').attr('src','../img/layout_insel_detail/Entnahme.svg');
 });
-$('.touchpoint6').click(function() {
+$('.touchpoint6, .divpoint6').click(function() {
   $('.introBg img').attr('src','../img/layout_insel_detail/Klaeranlage.svg');
 });
-$('.touchpoint7').click(function() {
+$('.touchpoint7, .divpoint7').click(function() {
   $('.introBg img').attr('src','../img/layout_insel_detail/Abfluss.svg');
 });
 

@@ -12,6 +12,26 @@ $(function () {
     var klaeranlagen = item[7];
     var abfluss = item[8];
 
+
+    if (!Highcharts.theme) {
+        Highcharts.setOptions({
+            chart: {
+                backgroundColor: '#FCFCFC'
+            },
+            colors: ['#7393A7', '#80bee5', '#B9D3E4'],
+            title: {
+                style: {
+                    color: 'black'
+                }
+            },
+            tooltip: {
+                style: {
+                    color: '#999999'
+                }
+            }
+        });
+    }
+
     $('.insel_name').html(landername);
 
 
@@ -80,56 +100,112 @@ $(function () {
 
     //klare
     Highcharts.chart('klare', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Kläranlagenanschlüsse'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'in % der Bevölkerung'
-            }
 
+        chart: {
+            type: 'solidgauge',
+            marginTop: 60
         },
-     legend: {
-           enabled: false
-            },
-        plotOptions: {
-          column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+
+        title: {
+            text: 'Kläranlagenanschluss',
+            style: {
+                fontSize: '16px'
+            }
+        },
+
+        subtitle: {
+         text: 'Angaben in % der Bevölkerung',
+            style: {
+                fontSize: '12px'
             }
         },
 
         tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            borderWidth: 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '16px'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            positioner: function (labelWidth) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 180
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for Move
+                outerRadius: '112%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
+                borderWidth: 0
+            }, { // Track for Exercise
+                outerRadius: '87%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.3).get(),
+                borderWidth: 0
+            }, { // Track for Stand
+                outerRadius: '62%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.3).get(),
+                borderWidth: 0
+            }]
+        },
+
+        yAxis: {
+            min: 0,
+            max: 100,
+            lineWidth: 0,
+            tickPositions: []
+        },
+
+        plotOptions: {
+            solidgauge: {
+                borderWidth: '34px',
+                dataLabels: {
+                    enabled: false
+                },
+                linecap: 'round',
+                stickyTracking: false
+            }
         },
 
         series: [{
-            name: 'Länder',
-            colorByPoint: true,
+            name: 'Luxemburg',
+            borderColor: Highcharts.getOptions().colors[0],
             data: [{
-                name: 'Luxemburg',
+                color: Highcharts.getOptions().colors[0],
+                radius: '100%',
+                innerRadius: '100%',
                 y: 96.3
-            }, {
-                name: landername,
+            }]
+        }, {
+            name: landername,
+            borderColor: Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '75%',
+                innerRadius: '75%',
                 y: klaeranlagen
-            }, {
-                name: 'Rumänien',
+            }]
+        }, {
+            name: 'Rumänien',
+            borderColor: Highcharts.getOptions().colors[2],
+            data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '50%',
+                innerRadius: '50%',
                 y: 35.5
-            }],
-        }],
-      }
-    );
+            }]
+        }]
+    });
+
+
 
     //Entnahme
     Highcharts.chart('entnahme_und_verbrauch', {
