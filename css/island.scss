@@ -1,39 +1,78 @@
-$base_blue: #5B8FB1;
 
-.islands_nav {
+.site_header {
   display: block;
-  position: relative;
+  //position: relative;
   top: 0;
   margin: 0;
   width: 100%;
-  min-height: 70px;
-  background: url('../img/bg.png');
+  height: 150px;
+  //background: url('../img/bg.png');
   background-position: top center;
   margin-bottom: 50px;
 
+  .site_logo {
+    img, span {
+      display: inline-block;
+      float: left;
+    }
+
+    span {
+      margin-top: 66px;
+      font-weight: 700;
+      margin-right: 50px;
+    }
+
+  }
+
+  .site_logo img {
+    width: 40px;
+    //height: 70px;
+    height: auto;
+
+    display: block;
+    float: left;
+
+    margin: 12px 0 0 70px;
+    padding: 20px 10px 0;
+    font-size: 20px;
+    //text-transform: uppercase;
+
+  }
+}
+
+.islands_nav {
+  display: block;
+  float: right;
+  margin-right: 70px;
+
+
   ul {
     display: inline-block;
-    width: 100%;
+    //width: 100%;
     list-style-type: none;
-    padding: 20px 0;
+    padding: 45px 0 0;
 
     li {
       display: block;
       float: left;
-      width: 13%;
+      //width: auto;
       text-align: center;
-      margin: 0 2%;
-      border: 1px solid #fff;
-      border-radius: 5px;
-      padding: 5px 10px;
-      color: #fff;
+      margin: 0 10px;
+      //border: 1px solid #fff;
+      //border-radius: 5px;
+      padding: 5px 0 3px;
+      color: #000;
       text-decoration: none;
+      cursor: pointer;
 
-
-      &:hover, &.active {
-        background: #fff;
-        color: $base_blue;
+      &:hover {
+        color: darken(#28B7E0, 20%);
       }
+
+      &.active {
+        border-bottom: 3px solid darken(#28B7E0, 20%);
+      }
+
     }
   }
 }

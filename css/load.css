@@ -2,19 +2,22 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-image: url("../img/bg.png");
+  background: #EFF3F3;
   font-family: 'Alegreya Sans', sans-serif; }
 
 .siteDes {
   width: 60%;
   height: auto;
   margin: auto;
-  margin-top: 180px;
+  margin-top: 50px;
   text-align: center;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   letter-spacing: 0.2px;
   line-height: 30px; }
+  .siteDes img {
+    width: 89px;
+    height: 120px; }
   .siteDes h1 {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
@@ -35,16 +38,20 @@ body {
     border-radius: 5px;
     background: none; }
     .siteDes #exploreButton:hover {
-      color: #fff;
+      color: #0e4f61;
       border: 1px solid #0e4f61;
       -webkit-box-shadow: 0 0 5px #14738e; }
 
 .siteInfo {
   display: block;
-  width: 600px;
-  height: auto;
+  width: 100%;
   margin: auto;
+  height: 80px;
   margin-top: 150px; }
+  .siteInfo .info_wrap {
+    margin: 0 auto;
+    height: 100%;
+    width: 560px; }
   .siteInfo img, .siteInfo p {
     display: block;
     float: left; }
@@ -54,15 +61,13 @@ body {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 14px;
     line-height: 25px;
-    width: 490px;
+    width: 450px;
     margin-left: 30px; }
 
 footer {
   display: block;
-  position: absolute;
-  bottom: 0;
+  margin-top: 20px;
   width: 100%;
-  min-height: 50px;
   background: #000000;
   text-align: right;
   font-family: 'Alegreya Sans', sans-serif;
@@ -75,14 +80,25 @@ footer {
     color: white;
     text-decoration: none; }
 
+footer.start_footer {
+  position: absolute;
+  bottom: 0; }
+
+.impressum_footer {
+  min-height: 80px; }
+
 .siteInfo2 {
+  display: block;
+  float: left;
   color: #fff;
   margin-top: 0;
-  margin-left: 250px; }
+  margin-left: 250px;
+  height: 80px; }
   .siteInfo2 img {
     width: 50px;
     margin: 5px 0; }
   .siteInfo2 p {
+    display: inline-block;
     margin-left: 20px;
     text-align: left; }
 
@@ -110,7 +126,7 @@ footer {
       #introYN .buttonRow a:last-child {
         margin: 0 125px 0 25px; }
       #introYN .buttonRow a:hover {
-        color: #fff;
+        color: #0e4f61;
         border: 1px solid #0e4f61;
         -webkit-box-shadow: 0 0 5px #14738e; }
 
@@ -119,5 +135,13 @@ footer {
 
 .display_off {
   display: none; }
+
+.impressum {
+  background: #DDDEDE;
+  height: auto; }
+
+.impressum_con {
+  width: 900px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=load.css.map */

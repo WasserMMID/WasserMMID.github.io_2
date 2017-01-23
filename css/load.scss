@@ -1,18 +1,29 @@
 @import "font.scss";
 
+$base_blue: #5B8FB1;
+
+
 body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-image: url('../img/bg.png');
+  background: #EFF3F3;
+
+  //background-image: url('../img/bg.png');
   font-family: 'Alegreya Sans', sans-serif;
 }
 
 .siteDes {
+
+  img {
+    width: 89px;
+    height: 120px;
+  }
+
   width: 60%;
   height: auto;
   margin: auto;
-  margin-top: 180px;
+  margin-top: 50px;
   text-align: center;
 
   @include font-normal;
@@ -43,7 +54,8 @@ body {
     background: none;
 
     &:hover {
-      color: #fff;
+      //color: #fff;
+      color: darken(#28B7E0, 30%);
       border: 1px solid darken(#28B7E0, 30%);
       -webkit-box-shadow: 0 0 5px darken(#28B7E0, 20%);
     }
@@ -53,11 +65,17 @@ body {
 .siteInfo {
   display: block;
   //position: absolute;
-  width: 600px;
-  height: auto;
+  width: 100%;
   margin: auto;
   //bottom: 150px;
+  height: 80px;
   margin-top: 150px;
+
+  .info_wrap {
+    margin: 0 auto;
+    height: 100%;
+    width: 560px;
+  }
 
   img, p {
     display: block;
@@ -71,17 +89,16 @@ body {
   p {
     @include font-info;
 
-    width: 490px;
+    width: 450px;
     margin-left: 30px;
   }
 }
 
 footer {
   display: block;
-  position: absolute;
-  bottom: 0;
+  margin-top: 20px;
+  //bottom: 0;
   width: 100%;
-  min-height: 50px;
   background: #000000;
   text-align: right;
   @include font-info;
@@ -95,10 +112,21 @@ footer {
   }
 }
 
+footer.start_footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.impressum_footer {
+  min-height: 80px;
+}
 .siteInfo2 {
+  display: block;
+  float: left;
   color: #fff;
   margin-top: 0;
   margin-left: 250px;
+  height: 80px;
 
   img {
     width: 50px;
@@ -106,6 +134,7 @@ footer {
   }
 
   p {
+    display: inline-block;
     margin-left: 20px;
     text-align: left;
   }
@@ -141,7 +170,7 @@ footer {
       }
 
       &:hover {
-        color: #fff;
+        color: darken(#28B7E0, 30%);
         border: 1px solid darken(#28B7E0, 30%);
         -webkit-box-shadow: 0 0 5px darken(#28B7E0, 20%);
       }
@@ -155,4 +184,14 @@ footer {
 
 .display_off {
   display: none;
+}
+
+.impressum {
+  background: #DDDEDE;
+  height: auto;
+}
+
+.impressum_con {
+  width: 900px;
+  margin: 0 auto;
 }

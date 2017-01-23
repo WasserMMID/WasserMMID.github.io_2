@@ -1,32 +1,48 @@
-.islands_nav {
+.site_header {
   display: block;
-  position: relative;
   top: 0;
   margin: 0;
   width: 100%;
-  min-height: 70px;
-  background: url("../img/bg.png");
+  height: 150px;
   background-position: top center;
   margin-bottom: 50px; }
+  .site_header .site_logo img, .site_header .site_logo span {
+    display: inline-block;
+    float: left; }
+  .site_header .site_logo span {
+    margin-top: 66px;
+    font-weight: 700;
+    margin-right: 50px; }
+  .site_header .site_logo img {
+    width: 40px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 12px 0 0 70px;
+    padding: 20px 10px 0;
+    font-size: 20px; }
+
+.islands_nav {
+  display: block;
+  float: right;
+  margin-right: 70px; }
   .islands_nav ul {
     display: inline-block;
-    width: 100%;
     list-style-type: none;
-    padding: 20px 0; }
+    padding: 45px 0 0; }
     .islands_nav ul li {
       display: block;
       float: left;
-      width: 13%;
       text-align: center;
-      margin: 0 2%;
-      border: 1px solid #fff;
-      border-radius: 5px;
-      padding: 5px 10px;
-      color: #fff;
-      text-decoration: none; }
-      .islands_nav ul li:hover, .islands_nav ul li.active {
-        background: #fff;
-        color: #5B8FB1; }
+      margin: 0 10px;
+      padding: 5px 0 3px;
+      color: #000;
+      text-decoration: none;
+      cursor: pointer; }
+      .islands_nav ul li:hover {
+        color: #14738e; }
+      .islands_nav ul li.active {
+        border-bottom: 3px solid #14738e; }
 
 .islands {
   display: block;
@@ -80,17 +96,17 @@
 
 @keyframes positionChange1 {
   0% {
-    top: 938px;
-    left: 890px;
-    z-index: 158; }
+    top: 872px;
+    left: 766px;
+    z-index: 22; }
   100% {
     top: 67.2%;
     left: 3.5%; } }
 @-webkit-keyframes positionChange1 {
   0% {
-    top: 714px;
-    left: 650px;
-    z-index: 59; }
+    top: 459px;
+    left: 472px;
+    z-index: 209; }
   100% {
     top: 67.2%;
     left: 3.5%; } }
@@ -133,17 +149,17 @@
 
 @keyframes positionChange2 {
   0% {
-    top: 609px;
-    left: 342px;
-    z-index: 48; }
+    top: 851px;
+    left: 171px;
+    z-index: 185; }
   100% {
     top: 64.8%;
     left: 12.40559%; } }
 @-webkit-keyframes positionChange2 {
   0% {
-    top: 818px;
-    left: 956px;
-    z-index: 187; }
+    top: 715px;
+    left: 405px;
+    z-index: 21; }
   100% {
     top: 64.8%;
     left: 12.40559%; } }
@@ -186,17 +202,17 @@
 
 @keyframes positionChange3 {
   0% {
-    top: 70px;
-    left: 430px;
-    z-index: 134; }
+    top: 37px;
+    left: 800px;
+    z-index: 22; }
   100% {
     top: 62.4%;
     left: 19.23909%; } }
 @-webkit-keyframes positionChange3 {
   0% {
-    top: 786px;
-    left: 336px;
-    z-index: 85; }
+    top: 551px;
+    left: 904px;
+    z-index: 231; }
   100% {
     top: 62.4%;
     left: 19.23909%; } }
@@ -239,17 +255,17 @@
 
 @keyframes positionChange4 {
   0% {
-    top: 817px;
-    left: 304px;
-    z-index: 198; }
+    top: 283px;
+    left: 978px;
+    z-index: 281; }
   100% {
     top: 60%;
     left: 25%; } }
 @-webkit-keyframes positionChange4 {
   0% {
-    top: 304px;
-    left: 466px;
-    z-index: 194; }
+    top: 699px;
+    left: 95px;
+    z-index: 144; }
   100% {
     top: 60%;
     left: 25%; } }
@@ -292,17 +308,17 @@
 
 @keyframes positionChange5 {
   0% {
-    top: 653px;
-    left: 777px;
-    z-index: 112; }
+    top: 183px;
+    left: 743px;
+    z-index: 214; }
   100% {
     top: 57.6%;
     left: 30.07546%; } }
 @-webkit-keyframes positionChange5 {
   0% {
-    top: 315px;
-    left: 406px;
-    z-index: 183; }
+    top: 247px;
+    left: 210px;
+    z-index: 35; }
   100% {
     top: 57.6%;
     left: 30.07546%; } }
@@ -345,17 +361,17 @@
 
 @keyframes positionChange6 {
   0% {
-    top: 42px;
-    left: 381px;
-    z-index: 201; }
+    top: 885px;
+    left: 210px;
+    z-index: 222; }
   100% {
     top: 55.2%;
     left: 34.66403%; } }
 @-webkit-keyframes positionChange6 {
   0% {
-    top: 237px;
-    left: 654px;
-    z-index: 253; }
+    top: 986px;
+    left: 992px;
+    z-index: 16; }
   100% {
     top: 55.2%;
     left: 34.66403%; } }
@@ -398,17 +414,17 @@
 
 @keyframes positionChange7 {
   0% {
-    top: 866px;
-    left: 560px;
-    z-index: 195; }
+    top: 622px;
+    left: 10px;
+    z-index: 242; }
   100% {
     top: 52.8%;
     left: 38.88365%; } }
 @-webkit-keyframes positionChange7 {
   0% {
-    top: 325px;
-    left: 88px;
-    z-index: 156; }
+    top: 469px;
+    left: 635px;
+    z-index: 114; }
   100% {
     top: 52.8%;
     left: 38.88365%; } }
@@ -451,17 +467,17 @@
 
 @keyframes positionChange8 {
   0% {
-    top: 690px;
-    left: 879px;
-    z-index: 154; }
+    top: 266px;
+    left: 980px;
+    z-index: 203; }
   100% {
     top: 50.4%;
     left: 42.81118%; } }
 @-webkit-keyframes positionChange8 {
   0% {
-    top: 529px;
-    left: 470px;
-    z-index: 122; }
+    top: 770px;
+    left: 423px;
+    z-index: 235; }
   100% {
     top: 50.4%;
     left: 42.81118%; } }
@@ -504,17 +520,17 @@
 
 @keyframes positionChange9 {
   0% {
-    top: 410px;
-    left: 345px;
-    z-index: 83; }
+    top: 940px;
+    left: 207px;
+    z-index: 135; }
   100% {
     top: 48%;
     left: 46.5%; } }
 @-webkit-keyframes positionChange9 {
   0% {
-    top: 301px;
-    left: 501px;
-    z-index: 183; }
+    top: 320px;
+    left: 549px;
+    z-index: 96; }
   100% {
     top: 48%;
     left: 46.5%; } }
@@ -557,17 +573,17 @@
 
 @keyframes positionChange10 {
   0% {
-    top: 317px;
-    left: 518px;
-    z-index: 167; }
+    top: 737px;
+    left: 618px;
+    z-index: 72; }
   100% {
     top: 45.6%;
     left: 49.98897%; } }
 @-webkit-keyframes positionChange10 {
   0% {
-    top: 866px;
-    left: 113px;
-    z-index: 194; }
+    top: 39px;
+    left: 236px;
+    z-index: 184; }
   100% {
     top: 45.6%;
     left: 49.98897%; } }
@@ -610,17 +626,17 @@
 
 @keyframes positionChange11 {
   0% {
-    top: 353px;
-    left: 738px;
-    z-index: 295; }
+    top: 872px;
+    left: 452px;
+    z-index: 134; }
   100% {
     top: 43.2%;
     left: 53.30743%; } }
 @-webkit-keyframes positionChange11 {
   0% {
-    top: 113px;
-    left: 649px;
-    z-index: 226; }
+    top: 234px;
+    left: 779px;
+    z-index: 217; }
   100% {
     top: 43.2%;
     left: 53.30743%; } }
@@ -663,17 +679,17 @@
 
 @keyframes positionChange12 {
   0% {
-    top: 142px;
-    left: 692px;
-    z-index: 65; }
+    top: 552px;
+    left: 508px;
+    z-index: 76; }
   100% {
     top: 40.8%;
     left: 56.47818%; } }
 @-webkit-keyframes positionChange12 {
   0% {
-    top: 248px;
-    left: 568px;
-    z-index: 236; }
+    top: 558px;
+    left: 13px;
+    z-index: 160; }
   100% {
     top: 40.8%;
     left: 56.47818%; } }
@@ -716,17 +732,17 @@
 
 @keyframes positionChange13 {
   0% {
-    top: 574px;
-    left: 974px;
-    z-index: 194; }
+    top: 905px;
+    left: 1000px;
+    z-index: 111; }
   100% {
     top: 38.4%;
     left: 59.51935%; } }
 @-webkit-keyframes positionChange13 {
   0% {
-    top: 473px;
-    left: 407px;
-    z-index: 101; }
+    top: 438px;
+    left: 329px;
+    z-index: 214; }
   100% {
     top: 38.4%;
     left: 59.51935%; } }
@@ -769,17 +785,17 @@
 
 @keyframes positionChange14 {
   0% {
-    top: 150px;
-    left: 702px;
-    z-index: 12; }
+    top: 439px;
+    left: 823px;
+    z-index: 82; }
   100% {
     top: 36.0%;
     left: 62.44563%; } }
 @-webkit-keyframes positionChange14 {
   0% {
-    top: 128px;
-    left: 910px;
-    z-index: 244; }
+    top: 562px;
+    left: 34px;
+    z-index: 173; }
   100% {
     top: 36.0%;
     left: 62.44563%; } }
@@ -822,17 +838,17 @@
 
 @keyframes positionChange15 {
   0% {
-    top: 147px;
-    left: 591px;
-    z-index: 241; }
+    top: 439px;
+    left: 352px;
+    z-index: 128; }
   100% {
     top: 33.6%;
     left: 65.26914%; } }
 @-webkit-keyframes positionChange15 {
   0% {
-    top: 592px;
-    left: 436px;
-    z-index: 189; }
+    top: 951px;
+    left: 584px;
+    z-index: 290; }
   100% {
     top: 33.6%;
     left: 65.26914%; } }
@@ -875,17 +891,17 @@
 
 @keyframes positionChange16 {
   0% {
-    top: 744px;
-    left: 352px;
-    z-index: 10; }
+    top: 395px;
+    left: 897px;
+    z-index: 128; }
   100% {
     top: 31.2%;
     left: 68%; } }
 @-webkit-keyframes positionChange16 {
   0% {
-    top: 716px;
-    left: 42px;
-    z-index: 172; }
+    top: 413px;
+    left: 888px;
+    z-index: 256; }
   100% {
     top: 31.2%;
     left: 68%; } }
@@ -928,17 +944,17 @@
 
 @keyframes positionChange17 {
   0% {
-    top: 976px;
-    left: 557px;
-    z-index: 186; }
+    top: 694px;
+    left: 145px;
+    z-index: 28; }
   100% {
     top: 28.8%;
     left: 70.64677%; } }
 @-webkit-keyframes positionChange17 {
   0% {
-    top: 642px;
-    left: 864px;
-    z-index: 229; }
+    top: 390px;
+    left: 298px;
+    z-index: 34; }
   100% {
     top: 28.8%;
     left: 70.64677%; } }
@@ -981,17 +997,17 @@
 
 @keyframes positionChange18 {
   0% {
-    top: 967px;
-    left: 207px;
-    z-index: 258; }
+    top: 26px;
+    left: 549px;
+    z-index: 114; }
   100% {
     top: 26.4%;
     left: 73.21677%; } }
 @-webkit-keyframes positionChange18 {
   0% {
-    top: 238px;
-    left: 111px;
-    z-index: 189; }
+    top: 974px;
+    left: 115px;
+    z-index: 182; }
   100% {
     top: 26.4%;
     left: 73.21677%; } }
@@ -1034,17 +1050,17 @@
 
 @keyframes positionChange19 {
   0% {
-    top: 231px;
-    left: 953px;
-    z-index: 260; }
+    top: 13px;
+    left: 695px;
+    z-index: 127; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
 @-webkit-keyframes positionChange19 {
   0% {
-    top: 192px;
-    left: 190px;
-    z-index: 203; }
+    top: 950px;
+    left: 88px;
+    z-index: 123; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
@@ -1091,17 +1107,17 @@
 
 @keyframes positionChange19 {
   0% {
-    top: 662px;
-    left: 428px;
-    z-index: 279; }
+    top: 409px;
+    left: 277px;
+    z-index: 192; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
 @-webkit-keyframes positionChange19 {
   0% {
-    top: 671px;
-    left: 25px;
-    z-index: 76; }
+    top: 783px;
+    left: 817px;
+    z-index: 41; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
@@ -1148,17 +1164,17 @@
 
 @keyframes positionChange20 {
   0% {
-    top: 745px;
-    left: 267px;
-    z-index: 225; }
+    top: 97px;
+    left: 85px;
+    z-index: 219; }
   100% {
     top: 21.6%;
     left: 78.15092%; } }
 @-webkit-keyframes positionChange20 {
   0% {
-    top: 667px;
-    left: 759px;
-    z-index: 164; }
+    top: 359px;
+    left: 751px;
+    z-index: 54; }
   100% {
     top: 21.6%;
     left: 78.15092%; } }
@@ -1205,17 +1221,17 @@
 
 @keyframes positionChange21 {
   0% {
-    top: 189px;
-    left: 290px;
-    z-index: 40; }
+    top: 119px;
+    left: 970px;
+    z-index: 159; }
   100% {
     top: 19.2%;
     left: 80.52538%; } }
 @-webkit-keyframes positionChange21 {
   0% {
-    top: 131px;
-    left: 730px;
-    z-index: 296; }
+    top: 671px;
+    left: 941px;
+    z-index: 129; }
   100% {
     top: 19.2%;
     left: 80.52538%; } }
@@ -1262,17 +1278,17 @@
 
 @keyframes positionChange22 {
   0% {
-    top: 119px;
-    left: 908px;
-    z-index: 200; }
+    top: 779px;
+    left: 524px;
+    z-index: 236; }
   100% {
     top: 16.8%;
     left: 82.84394%; } }
 @-webkit-keyframes positionChange22 {
   0% {
-    top: 231px;
-    left: 449px;
-    z-index: 48; }
+    top: 258px;
+    left: 424px;
+    z-index: 38; }
   100% {
     top: 16.8%;
     left: 82.84394%; } }
@@ -1319,17 +1335,17 @@
 
 @keyframes positionChange23 {
   0% {
-    top: 450px;
-    left: 660px;
-    z-index: 48; }
+    top: 770px;
+    left: 532px;
+    z-index: 186; }
   100% {
     top: 14.4%;
     left: 85.11038%; } }
 @-webkit-keyframes positionChange23 {
   0% {
-    top: 596px;
-    left: 175px;
-    z-index: 264; }
+    top: 485px;
+    left: 984px;
+    z-index: 266; }
   100% {
     top: 14.4%;
     left: 85.11038%; } }
@@ -1376,17 +1392,17 @@
 
 @keyframes positionChange24 {
   0% {
-    top: 199px;
-    left: 904px;
-    z-index: 183; }
+    top: 613px;
+    left: 969px;
+    z-index: 272; }
   100% {
     top: 12.0%;
     left: 87.32806%; } }
 @-webkit-keyframes positionChange24 {
   0% {
-    top: 292px;
-    left: 809px;
-    z-index: 128; }
+    top: 563px;
+    left: 640px;
+    z-index: 261; }
   100% {
     top: 12.0%;
     left: 87.32806%; } }
@@ -1433,17 +1449,17 @@
 
 @keyframes positionChange25 {
   0% {
-    top: 361px;
-    left: 201px;
-    z-index: 42; }
+    top: 311px;
+    left: 198px;
+    z-index: 238; }
   100% {
     top: 9.6%;
     left: 89.5%; } }
 @-webkit-keyframes positionChange25 {
   0% {
-    top: 565px;
-    left: 929px;
-    z-index: 186; }
+    top: 747px;
+    left: 543px;
+    z-index: 123; }
   100% {
     top: 9.6%;
     left: 89.5%; } }
@@ -1490,17 +1506,17 @@
 
 @keyframes positionChange26 {
   0% {
-    top: 334px;
-    left: 345px;
-    z-index: 175; }
+    top: 385px;
+    left: 907px;
+    z-index: 22; }
   100% {
     top: 7.2%;
     left: 91.62892%; } }
 @-webkit-keyframes positionChange26 {
   0% {
-    top: 446px;
-    left: 860px;
-    z-index: 277; }
+    top: 289px;
+    left: 693px;
+    z-index: 293; }
   100% {
     top: 7.2%;
     left: 91.62892%; } }
@@ -1547,17 +1563,17 @@
 
 @keyframes positionChange27 {
   0% {
-    top: 776px;
-    left: 207px;
-    z-index: 44; }
+    top: 684px;
+    left: 466px;
+    z-index: 200; }
   100% {
     top: 4.8%;
     left: 93.71728%; } }
 @-webkit-keyframes positionChange27 {
   0% {
-    top: 770px;
-    left: 707px;
-    z-index: 118; }
+    top: 243px;
+    left: 460px;
+    z-index: 32; }
   100% {
     top: 4.8%;
     left: 93.71728%; } }
@@ -1604,17 +1620,17 @@
 
 @keyframes positionChange28 {
   0% {
-    top: 707px;
-    left: 211px;
-    z-index: 91; }
+    top: 349px;
+    left: 614px;
+    z-index: 271; }
   100% {
     top: 2.4%;
     left: 95.76731%; } }
 @-webkit-keyframes positionChange28 {
   0% {
-    top: 681px;
-    left: 105px;
-    z-index: 198; }
+    top: 279px;
+    left: 690px;
+    z-index: 186; }
   100% {
     top: 2.4%;
     left: 95.76731%; } }
@@ -2729,9 +2745,10 @@
     left: 0px;
     top: 0px; } }
 body {
-  background: #DDDEDE;
+  background: #EFF3F3;
   margin: 0;
-  font-family: 'Alegreya Sans', sans-serif; }
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400; }
 
 a {
   display: block;
@@ -2867,6 +2884,8 @@ footer {
   height: 15px;
   border-radius: 15px;
   background: #979797; }
+  .touchpoint.active {
+    background: #5B8FB1; }
 
 .pulse {
   width: 15px;

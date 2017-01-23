@@ -7,31 +7,45 @@ $('#exploreButton').click(function() {
 });
 
 $('.touchpoint1').click(function() {
-    $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint1').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail1').removeClass('display_off').addClass('display_on');
 });
 $('.touchpoint2').click(function() {
-    $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint2').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail2').removeClass('display_off').addClass('display_on');
 });
 $('.touchpoint3').click(function() {
-    $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint3').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail3').removeClass('display_off').addClass('display_on');
 });
 $('.touchpoint4').click(function() {
-    $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint4').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail4').removeClass('display_off').addClass('display_on');
 });
 $('.touchpoint5').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint5').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail5').removeClass('display_off').addClass('display_on');
 });
 $('.touchpoint6').click(function() {
-    $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint6').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail6').removeClass('display_off').addClass('display_on');
 });
 $('.touchpoint7').click(function() {
-    $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint7').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail7').removeClass('display_off').addClass('display_on');
 });
 
@@ -216,37 +230,6 @@ $('.button_back').click(function() {
   $('.intro_detail').removeClass('display_on').addClass('display_off');
 });
 
-// var table = [
-//   [ "Belgien", 1, "1", 28, 1, 1, 1, 1, 1, 1, 1],
-//   [ "Bulgarien", 2, "5", 27, "5", 2, "5", 2, "5", 2, "5"],
-//   [ "Dänemark", "3", "3",26, "5",2, "5",2, "5",2, "5"],
-//   [ "Deutschland", "4", "6", 25, "5", 2, "5",2, "5",2, "5",2, "5"],
-//   [ "Estland", "5",24 , 2, "5", 2, "5", 2, "5", 2, "5", 2, "5"],
-//   [ "Finnland", "6", "4", 23, "5", 2, "5", 2, "5", 2, "5"],
-//   [ "Frankreich", "7", "2", 22, "5", 2, "5", 2, "5", 2, "5"],
-//   [ "Griechenland", "8", "8", 21, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Irland", "9", "7", 20, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Italien", "10", "9", 19, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Kroatien", "11", "1", 18, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Lettland", "12", "5", 17, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Litauen", "13", "3", 16, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Luxemburg", "14", "6", 15, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Malta", "15", "10", 14, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Niederlande", "16", "4", 2, "5", 13, "5", 2, "5", 2, "5" ],
-//   [ "Oesterreich", "17", "2", 2, "5", 12, "5", 2, "5", 2, "5" ],
-//   [ "Polen", "18", "8", 11, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Oesterreich", "19", "7", 10, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Romaenien", "20", "9", 9, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Schweden", "21", "1", 8, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Slowakei", "22", "5", 7, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Slowenien", "23", "3", 6, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Spanien", "24", "6", 5, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Tschechische", "25", "10", 4, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "UK", "26", "4", 3, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Ungarn", "27", "2", 2, "5", 2, "5", 2, "5", 2, "5" ],
-//   [ "Zypern", "28", "8", 1, "5", 2, "5", 2, "5", 2, "5" ],
-// ];
-
 var table= [
 // [„Land“,“Position_Ressource“,“Zahl“,“Position_Verbrauch“,“Zahl“,“Position_NACE“,“Zahl,“Position_Entnahme“,“Zahl“,“Position_Klaerung“,“Zahl“]
 ["Belgien","22","19.9","26","26","17","15","9","5082","5","84","Belgien"],
@@ -308,6 +291,7 @@ function initIslands(){
     $('.island_' + item[1]).css('background-repeat', 'no-repeat');
     $('.island_' + item[1]).css('top', Math.floor(Math.random() * 400) + 130  +'px');
     $('.island_' + item[1]).css('left', Math.floor(Math.random() * 700) + 500 +'px');
+    $('.island_' + item[1]).css('z-index', Math.floor(Math.random() * 700)* (-1) +'px');
     $('.island_' + item[1]).css('-webkit-animation-name', 'none');
     $('.island_' + item[1]).css('-webkit-animation-name', 'sizeChange'+ item[1]);
 
