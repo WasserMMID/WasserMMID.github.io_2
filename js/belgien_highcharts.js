@@ -164,7 +164,7 @@ $(function () {
 
 
     //
-    $('.touchpoint').click(function() {
+    $('.touchpoint, .divpoint').click(function() {
       Highcharts.chart('uebersicht_resourcen', {
           chart: {
               type: 'bar'
