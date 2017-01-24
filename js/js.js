@@ -102,7 +102,7 @@ $('.intro_nav .touchpoint, .divpoint').click(function() {
   $('.to_islands').removeClass('display_on').addClass('display_off');
 });
 
-$('.intro_touchpoint1').click(function() {
+$('.touchpoint1, .intro_touchpoint1').click(function() {
   $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
   $('.regen').removeClass('display_off').addClass('display_on');
   $('.industrie').removeClass('display_off').addClass('display_on');
