@@ -11,6 +11,50 @@ $(function () {
     var klaeranlagen = item[7];
     var abfluss = item[8];
 
+    if (suesswasserressourcen ==null) {
+      $('.uebersicht_resourcen').hide();
+      $('.suesswasser').hide();
+      $('.touchpoint4').hide();
+    }
+
+    if (grundwasserentnahme ==null) {
+      $('.entnahme_1').hide();
+    }
+
+    if (oberflaechenwasserentnahme ==null) {
+      $('.entnahme_2').hide();
+    }
+
+    if ((grundwasserentnahme ==null)&& (oberflaechenwasserentnahme ==null)) {
+      $('.touchpoint5').hide();
+    }
+
+    if (verbrauch_PrivateHaushalte ==null) {
+      $('.wassertropfen_frisch').hide();
+      $('.verbrauch').hide();
+      $('.touchpoint3').hide();
+    }
+
+    if (verbrauch_Landwirtschaft ==null) {
+      $('.wirtschaft_1').hide();
+    }
+    if (verbrauch_Industrie ==null) {
+      $('.wirtschaft_2').hide();
+    }
+    if ((verbrauch_Landwirtschaft ==null)&& (verbrauch_Industrie ==null)) {
+      $('.touchpoint5').hide();
+    }
+
+    if (abfluss ==null) {
+      $('.abfluss').hide();
+      $('.touchpoint7').hide();
+    }
+
+    if (klaeranlagen == null) {
+      $('#wassertropfen_verbraucht').hide();
+      $('.klare').hide();
+      $('.touchpoint6').hide();
+    }
 
     if (!Highcharts.theme) {
         Highcharts.setOptions({
@@ -923,7 +967,7 @@ $(function () {
                 color: Highcharts.getOptions().colors[1],
                 radius: '75%',
                 innerRadius: '75%',
-                y: grundwasserentnahme
+                y: oberflaechenwasserentnahme
             }]
         }, {
             name: 'Malta',
