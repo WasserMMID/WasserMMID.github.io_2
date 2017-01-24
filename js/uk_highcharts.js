@@ -11,12 +11,10 @@ $(function () {
     var klaeranlagen = item[7];
     var abfluss = item[8];
 
-
-
     if (suesswasserressourcen ==null) {
       $('.uebersicht_resourcen').hide();
       $('.suesswasser').hide();
-      $('.touchpoint4').hide();
+      $('.touchpoint2').hide();
     }
 
     if (grundwasserentnahme ==null) {
@@ -44,7 +42,7 @@ $(function () {
       $('.wirtschaft_2').hide();
     }
     if ((verbrauch_Landwirtschaft ==null)&& (verbrauch_Industrie ==null)) {
-      $('.touchpoint5').hide();
+      $('.touchpoint4').hide();
     }
 
     if (abfluss ==null) {
