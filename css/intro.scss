@@ -175,28 +175,28 @@
 .wolke1 {
     position: relative;
     -webkit-animation-name: rauch; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
     animation-name: rauch;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    animation-duration: 3s;
+    //animation-delay: 1s;
     animation-iteration-count: infinite;
 }
 .wolke2 {
     position: relative;
-    -webkit-animation-name: rauch; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: rauch2; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: rauch;
+    animation-name: rauch2;
     animation-duration: 4s;
-    animation-delay: 2s;
+    //animation-delay: 1s;
     animation-iteration-count: infinite;
 }
 .wolke3 {
     position: relative;
-    -webkit-animation-name: rauch; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: rauch;
-    animation-duration: 4s;
-    animation-delay: 3s;
+    -webkit-animation-name: rauch3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: rauch3;
+    animation-duration: 5s;
+    //animation-delay: 2s;
     animation-iteration-count: infinite;
 }
 
@@ -204,9 +204,39 @@
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes rauch {
-    0%   {width: 0px; left:300px; top:300px;}
-    100%  {width: 80px; opacity: 0;
-    	left:150px; top:10px;}
+  0% {
+    width: 0px; left:300px; top:300px;
+  }
+  100% {
+    width: 80px; opacity: 0;
+    left:150px; top:10px;
+  }
+}
+@-webkit-keyframes rauch2 {
+  0% {
+    width: 0;
+    left:300px; top:300px;
+  }
+  40% {
+    width: 20px; left:200px; top:200px;
+  }
+  100% {
+    width: 80px; opacity: 0;
+    left:150px; top:10px;
+  }
+}
+@-webkit-keyframes rauch3 {
+  0% {
+    width: 0;
+    left:300px; top:300px;
+  }
+  50% {
+    width: 0px; left:300px; top:300px;
+  }
+  100% {
+    width: 80px; opacity: 0;
+    left:150px; top:10px;
+  }
 }
 
 .trans {
