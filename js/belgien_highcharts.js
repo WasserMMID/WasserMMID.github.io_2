@@ -35,7 +35,7 @@ $(function () {
 
 
     //übersicht 4 7
-    $('#verbrauch_pro_person').html( verbrauch_PrivateHaushalte +' m &sup3');
+    $('#verbrauch_pro_person').html( verbrauch_PrivateHaushalte +' m&sup3');
   	$('#klaranlage_person').html( klaeranlagen +' %');
 
     //resource_übersicht 1 8
@@ -48,122 +48,10 @@ $(function () {
             text: 'Ressourcen und Abfluss'
         },
         subtitle: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Süßwasserressourcen', 'Abfluss'],
-            title: {
-                text: null
+         text: 'Angaben in Mrd. m³',
+            style: {
+                fontSize: '12px'
             }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: null,
-                align: 'high'
-            },
-            labels: {
-                overflow: 'justify'
-            }
-        },
-        tooltip: {
-            valueSuffix: ' Milliarden m³'
-        },
-        plotOptions: {
-            bar: {
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'top',
-            x: -250,
-            y: 250,
-            floating: true,
-            borderWidth: 1,
-            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-            shadow: true
-        },
-        credits: {
-            enabled: false
-        },
-        colors: ['#A2C9DD'],
-        series: [{
-            name: 'Milliarden m³',
-            // data: [19.9,15.6]
-            data: [suesswasserressourcen,abfluss]
-        }]
-    });
-
-    Highcharts.chart('entnahme_und_verbrauch', {
-        chart: {
-            type: 'bar'
-        },
-        title: {
-            text: 'Entnahme und Verbrauch'
-        },
-        subtitle: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Grundwasserentnahme', 'Oberflaechenwasserentnahme', 'Verbrauch: Landwirtschaft', 'Verbrauch: Industrie'],
-            title: {
-                text: null
-            }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: null,
-                align: 'high'
-            },
-            labels: {
-                overflow: 'justify'
-            }
-        },
-        tooltip: {
-            valueSuffix: ' Millionen m³'
-        },
-        plotOptions: {
-            bar: {
-                dataLabels: {
-                    enabled: false
-                }
-            }
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'top',
-            x: -450,
-            y: 250,
-            floating: true,
-            borderWidth: 1,
-            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-            shadow: true
-        },
-        credits: {
-            enabled: false
-        },
-        series: [{
-            name: 'Millionen m³',
-            data: [grundwasserentnahme,oberflaechenwasserentnahme,verbrauch_Landwirtschaft,verbrauch_Industrie]
-        }]
-    });
-
-    $('.touchpoint').click(function() {
-    Highcharts.chart('uebersicht_resourcen', {
-        chart: {
-            type: 'bar'
-        },
-        title: {
-            text: 'Ressourcen und Abfluss'
-        },
-        subtitle: {
-            text: null
         },
         xAxis: {
             categories: ['Süßwasserressourcen', 'Abfluss'],
@@ -222,7 +110,10 @@ $(function () {
             text: 'Entnahme und Verbrauch'
         },
         subtitle: {
-            text: null
+         text: 'Angaben in Mio. m³',
+            style: {
+                fontSize: '12px'
+            }
         },
         xAxis: {
             categories: ['Grundwasserentnahme', 'Oberflaechenwasserentnahme', 'Verbrauch: Landwirtschaft', 'Verbrauch: Industrie'],
@@ -271,6 +162,131 @@ $(function () {
     });
 
 
+
+    //
+    $('.touchpoint').click(function() {
+      Highcharts.chart('uebersicht_resourcen', {
+          chart: {
+              type: 'bar'
+          },
+          title: {
+              text: 'Ressourcen und Abfluss'
+          },
+          subtitle: {
+           text: 'Angaben in Mrd. m³',
+              style: {
+                  fontSize: '12px'
+              }
+          },
+          xAxis: {
+              categories: ['Süßwasserressourcen', 'Abfluss'],
+              title: {
+                  text: null
+              }
+          },
+          yAxis: {
+              min: 0,
+              title: {
+                  text: null,
+                  align: 'high'
+              },
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          tooltip: {
+              valueSuffix: ' Milliarden m³'
+          },
+          plotOptions: {
+              bar: {
+                  dataLabels: {
+                      enabled: false
+                  }
+              }
+          },
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'top',
+              x: -250,
+              y: 250,
+              floating: true,
+              borderWidth: 1,
+              backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+              shadow: true
+          },
+          credits: {
+              enabled: false
+          },
+          colors: ['#A2C9DD'],
+          series: [{
+              name: 'Milliarden m³',
+              // data: [19.9,15.6]
+              data: [suesswasserressourcen,abfluss]
+          }]
+      });
+
+      //Entnahme
+      Highcharts.chart('entnahme_und_verbrauch', {
+          chart: {
+              type: 'bar'
+          },
+          title: {
+              text: 'Entnahme und Verbrauch'
+          },
+          subtitle: {
+           text: 'Angaben in Mio. m³',
+              style: {
+                  fontSize: '12px'
+              }
+          },
+          xAxis: {
+              categories: ['Grundwasserentnahme', 'Oberflaechenwasserentnahme', 'Verbrauch: Landwirtschaft', 'Verbrauch: Industrie'],
+              title: {
+                  text: null
+              }
+          },
+          yAxis: {
+              min: 0,
+              title: {
+                  text: null,
+                  align: 'high'
+              },
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          tooltip: {
+              valueSuffix: ' Millionen m³'
+          },
+          plotOptions: {
+              bar: {
+                  dataLabels: {
+                      enabled: false
+                  }
+              }
+          },
+          legend: {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'top',
+              x: -450,
+              y: 250,
+              floating: true,
+              borderWidth: 1,
+              backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+              shadow: true
+          },
+          credits: {
+              enabled: false
+          },
+          series: [{
+              name: 'Millionen m³',
+              data: [grundwasserentnahme,oberflaechenwasserentnahme,verbrauch_Landwirtschaft,verbrauch_Industrie]
+          }]
+      });
+
+
     //klare
     Highcharts.chart('klare', {
 
@@ -286,12 +302,12 @@ $(function () {
             }
         },
 
-        // subtitle: {
-        //  text: 'Angaben in % der Bevölkerung',
-        //     style: {
-        //         fontSize: '12px'
-        //     }
-        // },
+        subtitle: {
+         text: 'Angaben in % der Bevölkerung',
+            style: {
+                fontSize: '12px'
+            }
+        },
 
         tooltip: {
             borderWidth: 0,
@@ -393,6 +409,13 @@ $(function () {
             text: 'Verbrauch',
             style: {
                 fontSize: '16px'
+            }
+        },
+
+        subtitle: {
+         text: 'Angaben in m³/pro Einwohner',
+            style: {
+                fontSize: '12px'
             }
         },
 
@@ -498,6 +521,13 @@ $(function () {
             }
         },
 
+        subtitle: {
+         text: 'Angaben in Mio. m³',
+            style: {
+                fontSize: '12px'
+            }
+        },
+
         tooltip: {
             borderWidth: 0,
             backgroundColor: 'none',
@@ -597,6 +627,13 @@ $(function () {
             text: 'Verbrauch Industrie',
             style: {
                 fontSize: '16px'
+            }
+        },
+
+        subtitle: {
+         text: 'Angaben in Mio. m³',
+            style: {
+                fontSize: '12px'
             }
         },
 
@@ -701,6 +738,13 @@ $(function () {
             }
         },
 
+        subtitle: {
+         text: 'Angaben in Mio. m³',
+            style: {
+                fontSize: '12px'
+            }
+        },
+
         tooltip: {
             borderWidth: 0,
             backgroundColor: 'none',
@@ -798,6 +842,13 @@ $(function () {
             text: 'Oberflächenwasserentnahme',
             style: {
                 fontSize: '16px'
+            }
+        },
+
+        subtitle: {
+         text: 'Angaben in Mio. m³',
+            style: {
+                fontSize: '12px'
             }
         },
 
@@ -902,6 +953,12 @@ $(function () {
                 fontSize: '16px'
             }
         },
+        subtitle: {
+         text: 'Angaben in Mrd. m³',
+            style: {
+                fontSize: '12px'
+            }
+        },
 
         tooltip: {
             borderWidth: 0,
@@ -1004,6 +1061,13 @@ $(function () {
               }
           },
 
+          subtitle: {
+           text: 'Angaben in Mrd. m³',
+              style: {
+                  fontSize: '12px'
+              }
+          },
+
           tooltip: {
               borderWidth: 0,
               backgroundColor: 'none',
@@ -1090,6 +1154,5 @@ $(function () {
       });
 
     });
-
 
 });

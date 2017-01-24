@@ -142,19 +142,24 @@
     margin-top: 45px;
   }
 
-	.einleitung img {
-		display: block;
-		float: left;
-		margin-top: 67px;
-		width: 30px;
+	.einleitung {
+		width: 330px;
+		margin: 0 auto;
 
-		& + p {
+		img {
 			display: block;
 			float: left;
-			width: 300px;
-			margin-top: 70px;
-			margin-left: 20px;
-			color: #666666;
+			margin-top: 67px;
+			width: 30px;
+
+			& + p {
+				display: block;
+				float: left;
+				width: 280px;
+				margin-top: 70px;
+				margin-left: 20px;
+				color: #666666;
+			}
 		}
 	}
 }
