@@ -1,29 +1,48 @@
 .intro_detail {
   position: absolute;
-  right: 0;
-  top: 105px;
+  right: 70px;
+  top: 50px;
   width: 350px;
   height: 600px;
-  //margin-top: 40px;
   padding: 0px 40px 0;
-  //background: rgba(#fff, 0.8);
-  //-webkit-box-shadow: -2px 0px 5px 0px rgba(#fff, 0.8);
-  //-moz-box-shadow: -2px 0px 5px 0px rgba(#fff, 0.8);
-  //box-shadow: -2px 0px 5px 0px rgba(#fff, 0.8);
   z-index: 1000;
+  vertical-align: middle;
 
   font-family: 'Alegreya Sans', sans-serif;
 
   h1 {
     font-size: 28px;
     line-height: 50px;
-    margin-top: 40px;
-    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: left;
   }
 
   .intro_des {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .intro_des.einleitung {
+
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 80px;
+
+    & + img {
+      display: block;
+      float: left;
+      margin-top: 67px;
+      width: 30px;
+
+      & + p {
+        display: block;
+        float: left;
+        width: 300px;
+        margin-top: 70px;
+        margin-left: 20px;
+      }
+    }
   }
 }
 
@@ -39,18 +58,18 @@
 }
 
 .intro_con {
-  min-height: 820px;
+  display: block;
+  position: relative;
+  min-height: 763px;
 
   .intro_nav {
-    min-height: 820px;
+    min-height: 763px;
   }
 }
 
 .intro_nav {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 350px;
-  padding: 0 40px;
-  background: #fff;
+  right: 40px;
+  width: 40px;
 }

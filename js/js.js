@@ -48,57 +48,126 @@ $('.touchpoint7, .divpoint7').click(function() {
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail7').removeClass('display_off').addClass('display_on');
 });
-
-//intro Bg ändern
-$('.touchpointBg').click(function() {
-  // $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
+$('.touchpoint8, .divpoint8').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint8').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.detail8').removeClass('display_off').addClass('display_on');
+});
+$('.touchpoint9, .divpoint9').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint9').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.detail9').removeClass('display_off').addClass('display_on');
+});
+$('.touchpoint10, .divpoint10').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint10').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.detail10').removeClass('display_off').addClass('display_on');
+});
+$('.touchpoint11, .divpoint11').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint11').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.detail11').removeClass('display_off').addClass('display_on');
+});
+$('.touchpoint12, .divpoint12').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint12').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.detail12').removeClass('display_off').addClass('display_on');
+});
+$('.touchpoint13, .divpoint13').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint13').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.detail13').removeClass('display_off').addClass('display_on');
+});
+$('.touchpoint14, .divpoint14').click(function() {
+  $('.touchpoint').removeClass('active');
+  $('.touchpoint14').addClass('active');
+  $('.intro_detail').removeClass('display_on').addClass('display_off');
+  $('.detail14').removeClass('display_off').addClass('display_on');
 });
 
-$('.touchpoint1').click(function() {
-  $('.introBg img').attr('src','../img/insel.svg');
-});
-$('.touchpoint2, .divpoint2').click(function() {
-  $('.introBg img').attr('src','../img/layout_insel_detail/Ressourcen.svg');
-});
-$('.touchpoint3, .divpoint3').click(function() {
-  $('.introBg img').attr('src','../img/layout_insel_detail/Verbrauch.svg');
-});
-$('.touchpoint4, .divpoint4').click(function() {
-  $('.introBg img').attr('src','../img/layout_insel_detail/Industrie.svg');
-});
-$('.touchpoint5, .divpoint5').click(function() {
-  $('.introBg img').attr('src','../img/layout_insel_detail/Entnahme.svg');
-});
-$('.touchpoint6, .divpoint6').click(function() {
-  $('.introBg img').attr('src','../img/layout_insel_detail/Klaeranlage.svg');
-});
-$('.touchpoint7, .divpoint7').click(function() {
-  $('.introBg img').attr('src','../img/layout_insel_detail/Abfluss.svg');
+//intro bg
+$('.intro_nav .touchpoint, .divpoint').click(function() {
+  $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
+  $('.industrie').removeClass('display_on').addClass('display_off');
+  $('.regen').removeClass('display_on').addClass('display_off');
 });
 
-//intro
 $('.intro_touchpoint1').click(function() {
   $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
+  $('.regen').removeClass('display_off').addClass('display_on');
+  $('.industrie').removeClass('display_off').addClass('display_on');
 });
-$('.intro_touchpoint2').click(function() {
+$('.intro_touchpoint2, .divpoint2').click(function() {
   $('.introBg img').attr('src','img/intro/intro_Wasserressourcen.svg');
 });
-$('.intro_touchpoint3').click(function() {
+$('.intro_touchpoint3, .divpoint3').click(function() {
   $('.introBg img').attr('src','img/intro/intro_Mensch.svg');
 });
-$('.intro_touchpoint4').click(function() {
+$('.intro_touchpoint4, .divpoint4').click(function() {
   $('.introBg img').attr('src','img/intro/intro_Wirtschaft.svg');
 });
-$('.intro_touchpoint5').click(function() {
+$('.intro_touchpoint5, .divpoint5').click(function() {
   $('.introBg img').attr('src','img/intro/intro_Entnahme.svg');
 });
-$('.intro_touchpoint6').click(function() {
+$('.intro_touchpoint6, .divpoint6').click(function() {
   $('.introBg img').attr('src','img/intro/intro_Klaeranlage.svg');
 });
-$('.intro_touchpoint7').click(function() {
+$('.intro_touchpoint7, .divpoint7').click(function() {
   $('.introBg img').attr('src','img/intro/intro_abfluss.svg');
 });
+$('.intro_touchpoint8, .divpoint8').click(function() {
+  $('.introBg img').attr('src','img/intro/intro_regen_TRANS.svg');
+  $('.regen').removeClass('display_off').addClass('display_on');
+});
+$('.intro_touchpoint9, .divpoint9').click(function() {
+  $('.introBg img').attr('src','img/intro/intro_regen_TRANS.svg');
+  $('.industrie').removeClass('display_off').addClass('display_on');
+});
+$('.intro_touchpoint10, .divpoint10').click(function() {
+  $('.introBg img').attr('src','img/intro/intro_intZufluss.svg');
+});
+$('.intro_touchpoint11, .divpoint11').click(function() {
+  $('.introBg img').attr('src','img/intro/intro_oberflaechen.svg');
+});
+$('.intro_touchpoint12, .divpoint12').click(function() {
+  $('.introBg img').attr('src','img/intro/intro_exZufluss.svg');
+});
+$('.intro_touchpoint13, .divpoint13').click(function() {
+  $('.introBg img').attr('src','img/intro/intro_brunnen.svg');
+});
+$('.intro_touchpoint14, .divpoint14').click(function() {
+  $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
+});
 
+
+//detail Bg ändern
+$('.insel_detail_con .intro_nav .touchpoint1').click(function() {
+  $('.introBg img').attr('src','../img/insel.svg');
+});
+$('.insel_detail_con .intro_nav .touchpoint2, .divpoint2').click(function() {
+  $('.introBg img').attr('src','../img/layout_insel_detail/Ressourcen.svg');
+});
+$('.insel_detail_con .intro_nav .touchpoint3, .divpoint3').click(function() {
+  $('.introBg img').attr('src','../img/layout_insel_detail/Verbrauch.svg');
+});
+$('.insel_detail_con .intro_nav .touchpoint4, .divpoint4').click(function() {
+  $('.introBg img').attr('src','../img/layout_insel_detail/Industrie.svg');
+});
+$('.insel_detail_con .intro_nav .touchpoint5, .divpoint5').click(function() {
+  $('.introBg img').attr('src','../img/layout_insel_detail/Entnahme.svg');
+});
+$('.insel_detail_con .intro_nav .touchpoint6, .divpoint6').click(function() {
+  $('.introBg img').attr('src','../img/layout_insel_detail/Klaeranlage.svg');
+});
+$('.insel_detail_con .intro_nav .touchpoint7, .divpoint7').click(function() {
+  $('.introBg img').attr('src','../img/layout_insel_detail/Abfluss.svg');
+});
 
 
 function bes_show(){
@@ -290,7 +359,7 @@ function initIslands(){
     $('.island_' + item[1]).css('background', 'url(./img/laender/'+ item[11] +'.svg)');
     $('.island_' + item[1]).css('background-repeat', 'no-repeat');
     $('.island_' + item[1]).css('top', Math.floor(Math.random() * 400) + 130  +'px');
-    $('.island_' + item[1]).css('left', Math.floor(Math.random() * 700) + 500 +'px');
+    $('.island_' + item[1]).css('left', Math.floor(Math.random() * 650) + 500 +'px');
     $('.island_' + item[1]).css('z-index', Math.floor(Math.random() * 700)* (-1) +'px');
     $('.island_' + item[1]).css('-webkit-animation-name', 'none');
     $('.island_' + item[1]).css('-webkit-animation-name', 'sizeChange'+ item[1]);
@@ -349,7 +418,7 @@ function verbrauch(){
 
     var numberBes = document.createElement( 'div' );
     numberBes.className = 'island_des island_des_'+ item[3] + ' display_off';
-    var besContent = "<h2>" + item[0] + "</h2><p>" + item[4] + "<br/> m&sup3/Einwohner</p>";
+    var besContent = "<h2>" + item[0] + "</h2><p>" + item[4] + " m&sup3<br>/Einwohner</p>";
     $('.islands').append(numberBes);
     $('.island_des_' + item[3]).append(besContent);
   }

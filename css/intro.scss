@@ -1,10 +1,6 @@
-.container {
-  min-height: 966px;
-  //height: auto;
-}
-
 .intro_con .introBg {
   width: 100%;
+  height: 763px;
 
   left: 0;
   text-align: left;
@@ -15,27 +11,88 @@
     display: block;
     position: absolute;
     width: 900px;
-    top: 75px;
+    top: 20px;
     left: -150px;
   }
 
-  //background-image: url('../img/boden.svg');
-  //background-size: 900px auto;
-  //
-  //&.greyEffect {
-  //  background-image: url('../img/zwei_inseln_intro.svg');
-  //}
 }
 
+.intro_con .divpoint2 {
+  top: 400px;
+  left: 240px;
+  width: 40px;
+  height: 50px;
+}
+.intro_con .divpoint3 {
+  top: 390px;
+  left: 450px;
+  width: 60px;
+  height: 55px;
+}
+.intro_con .divpoint4 {
+  top: 380px;
+  left: 350px;
+  width: 60px;
+  height: 100px;
+}
+.intro_con .divpoint5 {
+  top: 450px;
+  left: 455px;
+  width: 28px;
+  height: 50px;
 
+}
+.intro_con .divpoint6 {
+  top: 385px;
+  left: 530px;
+  width: 120px;
+  height: 60px;
+}
+.intro_con .divpoint7 {
+  top: 495px;
+  left: 340px;
+  width: 40px;
+  height: 50px;
+}
+.intro_con .divpoint8 {
+  top: 20px;
+}
+.intro_con .divpoint9 {
+  top: 20px;
+}
+.intro_con .divpoint10 {
+  top: 450px;
+  left: 540px;
+  width: 70px;
+  height: 30px;
+}
+.intro_con .divpoint11 {
+  top: 20px;
+}
+.intro_con .divpoint12 {
+  top: 130px;
+  left: 240px;
+  width: 30px;
+  height: 250px;
+}
+.intro_con .divpoint13 {
+  top: 500px;
+  left: 455px;
+  width: 28px;
+  height: 50px;
+}
 
 .regen {
   display: block;
   position: absolute;
   top: 160px;
   left: 300px;
-  width: 200px;
+  width: 190px;
   height: 100px;
+}
+
+.intro_con .regen {
+  left: 270px;
 }
 
 .regen-eins {

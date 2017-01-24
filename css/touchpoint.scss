@@ -1,22 +1,24 @@
 .nav_points {
   display: block;
-  margin-top: 20px;
+  margin-top: 135px;
+  //position: absolute;
 }
 
 .touchpoint {
   display: block;
-  float: left;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 15px;
+  margin-left: 26px;
   position: relative;
   background: transparent;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  background: #979797;
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background: #000;
+  border: 1px solid #000;
 
   &.active {
-    background: $base_blue;
+    background: #fff;
+    border: 1px solid #000;
   }
 }
 
@@ -97,4 +99,45 @@
   -webkit-transform: scale(1);
   opacity: 0.0;
 }
+}
+
+.divpoint {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 900;
+}
+.divpoint2 {
+  width: 50px;
+  height: 400px;
+  left: 640px;
+  top: 450px;
+}
+.divpoint3 {
+  left: 410px;
+  top: 320px;
+}
+.divpoint4 {
+  left: 250px;
+  top: 370px;
+}
+.divpoint5 {
+  width: 30px;
+  height: 200px;
+  left: 438px;
+  top: 450px;
+}
+.divpoint6 {
+  width: 140px;
+  height: 80px;
+  left: 570px;
+  top: 340px;
+}
+.divpoint7 {
+  width: 100px;
+  height: 100px;
+  left: 200px;
+  top: 500px;
 }

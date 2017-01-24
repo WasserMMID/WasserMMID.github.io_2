@@ -1,7 +1,6 @@
 $(function () {
     var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
 
-
     var landername = item[0];
     var suesswasserressourcen = item[1];
     var grundwasserentnahme = item[2];

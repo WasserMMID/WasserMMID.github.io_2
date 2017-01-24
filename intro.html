@@ -2,23 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>MMID</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Pacifico" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MMID</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <script src="js/jquery.js"></script>
   </head>
   <body>
+    <div class="site_header">
+      <div class="site_logo">
+        <a href="index.html">
+          <img src="img/layout/logo.png" alt="">
+        </a>
+        <span>Wasser</span>
+      </div>
+      <div class="islands_nav">
+        <ul>
+          <li class="ressourcen"><a href="islands.html">Entdecken</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="container intro_con">
-      <a class="return_button" href="islands.html">
+      <!-- <a class="return_button" href="islands.html">
         <img src="img/layout/icon-zurueck.svg" alt="">
-      </a>
+      </a> -->
       <div class="introBg">
-        <img src="img/inseln_intro.svg" alt="">
+        <img src="img/zwei_inseln_intro.svg" alt="">
       </div>
-      <div class="regen">
+      <div class="regen display_on">
         <img class="regen-eins" src="img/regen.svg" width="5px">
         <img class="regen-zwei" src="img/regen.svg" width="5px">
         <img class="regen-drei" src="img/regen.svg" width="5px">
@@ -44,7 +57,7 @@
         <img class="regen-funf" src="img/regen.svg" width="5px">
         <img class="regen-sechs" src="img/regen.svg" width="5px">
       </div>
-      <div class="industrie">
+      <div class="industrie display_on">
         <img class="wolke1" src="img/wolke_weiss.svg">
         <img class="wolke2" src="img/wolke_weiss.svg">
         <img class="wolke3" src="img/wolke_weiss.svg">
@@ -52,41 +65,63 @@
 
       <div class="intro_nav">
         <div class="nav_points">
-          <span class="touchpoint touchpoint1 intro_touchpoint1"></span>
+          <span class="touchpoint active touchpoint1 intro_touchpoint1"></span>
+          <span class="touchpoint touchpoint8 intro_touchpoint8"></span>
+          <span class="touchpoint touchpoint9 intro_touchpoint9"></span>
+          <span class="touchpoint touchpoint13   intro_touchpoint13"></span>
+          <span class="touchpoint touchpoint11 intro_touchpoint11"></span>
+          <span class="touchpoint touchpoint12   intro_touchpoint12"></span>
+          <span class="touchpoint touchpoint10 intro_touchpoint10"></span>
           <span class="touchpoint touchpoint2 intro_touchpoint2"></span>
           <span class="touchpoint touchpoint3 intro_touchpoint3"></span>
           <span class="touchpoint touchpoint4 intro_touchpoint4"></span>
           <span class="touchpoint touchpoint5   intro_touchpoint5"></span>
           <span class="touchpoint touchpoint6 intro_touchpoint6"></span>
           <span class="touchpoint touchpoint7 intro_touchpoint7"></span>
+          <span class="touchpoint touchpoint14   intro_touchpoint14"></span>
         </div>
-
       </div>
 
+      <div class="divpoint divpoint2"></div>
+      <div class="divpoint divpoint3"></div>
+      <div class="divpoint divpoint4"></div>
+      <div class="divpoint divpoint5"></div>
+      <div class="divpoint divpoint6"></div>
+      <div class="divpoint divpoint7"></div>
+      <div class="divpoint divpoint8"></div>
+      <div class="divpoint divpoint9"></div>
+      <div class="divpoint divpoint10"></div>
+      <div class="divpoint divpoint11"></div>
+      <div class="divpoint divpoint12"></div>
+      <div class="divpoint divpoint13"></div>
+
       <div class="intro_detail detail1 display_on">
-        <!-- <h1>Hallo</h1> -->
-        <p class="intro_des">
+        <p class="intro_des einleitung">
           Nimm dir die Zeit und lerne ein paar Grundlagen:<br><br>Um Informationen über die einzelnen Elemente des Wasserkreislaufs zu erhalten, klicke einfach auf einen der Punkte. <br><br>
           Das Objekt wird dann hervorgehoben und genauer erklärt.
         </p>
+        <img src="img/layout/hand.png" alt="">
+        <p>Klicke auf das Land, um mehr zu erfahren oder nutze die Punkte rechts, um zu navigieren.</p>
       </div>
       <div class="intro_detail detail2 display_off">
         <h1>Ressourcen</h1>
         <p class="intro_des">
-          Gesamtzahl der Wasserressourcen aus internem und externen Zufluss.
+          Ressourcen beschreiben den Gesamtbestand an Wasser aus internem und externen Zufluss.<br>
+          Als interner Zufluss wird der Niederschlag eines Landes abzüglich der Verdunstung bezeichnet.<br>
+          Externer Zufluss entsteht durch grenzüberschreitende Wasserressourcen, wie etwa Flüsse.
         </p>
 
       </div>
       <div class="intro_detail detail3 display_off">
         <h1>Verbrauch</h1>
         <p class="intro_des">
-          Mit Wasserverbrauch wird umgangssprachlich die für den menschlichen Gebrauch verwendete Wassermenge bezeichnet. Dies umfasst das Trinkwasser, ebenso Waschen, Kochen und sonstiger Verbrauch im alltäglichen Leben. Außerdem gehören hierzu die abgegebenen Wassermengen für die Landwirtschaft, das Gewerbe und die Industrie.
+          Der Verbrauch bezeichnet die von einem Menschen benötigte Wassermenge, etwa in Form von Trinkwasser oder sonstigem Bedarf im Alltag. Außerdem zählen hierzu die in Landwirtschaft, Gewerbe und Industrie verwendeten Wasserressourcen.
         </p>
       </div>
       <div class="intro_detail detail4 display_off">
         <h1>Wirtschaftsverbrauch</h1>
         <p class="intro_des">
-          Die Wassermenge, welche durch die Industrie und die Landwirtschaft verbraucht wird.
+          Dieser Wert stellt die Wassermenge dar, welche durch Industrie und Landwirtschaft verbraucht wird.
         </p>
       </div>
       <div class="intro_detail detail5 display_off">
@@ -98,18 +133,57 @@
       <div class="intro_detail detail6 display_off">
         <h1>Kläranlagen Anschluss</h1>
         <p class="intro_des">
-          Bevölkerungsanteil, der Anschluss zu einer Kläranlage hat
+          Diese Kennzahl beschreibt den über einen Kläranschluss verfügenden Bevölkerungsanteil.
         </p>
 
       </div>
       <div class="intro_detail detail7 display_off">
         <h1>Abfluss</h1>
         <p class="intro_des">
-          Wassermenge die aus dem Land abfließt.
+          Als Abfluss werden alle Wasserressourcen bezeichnet, die nicht mehr zur direkten Nutzung zur Verfügung stehen.
         </p>
-
       </div>
-
+      <div class="intro_detail detail8 display_off">
+        <h1>Niederschlag</h1>
+        <p class="intro_des">
+          Als Niederschlag bezeichnet man alles Wasser, das in flüssiger oder fester Form aus Wolken auf die Erde fällt, also Regen, Schnee, Hagel und Graupel. Hinzu kommt Wasser, dass sich auf Oberflächen absetzt (Tau oder Reif).
+        </p>
+      </div>
+      <div class="intro_detail detail9 display_off">
+        <h1>Evapotranspiration</h1>
+        <p class="intro_des">
+          Evapotranspiration bezeichnet in der Meteorologie die Summe aus Transpiration und Evaporation, also der Verdunstung von Wasser aus Tier- und Pflanzenwelt sowie von Boden- und Wasseroberflächen.
+        </p>
+      </div>
+      <div class="intro_detail detail10 display_off">
+        <h1>Interner Zufluss</h1>
+        <p class="intro_des">
+          Das Gesamtvolumen von Wasser, welches durch Niederschlag und Flüssen besteht und die verdunsteten Wassermengen nicht beinhaltet.
+        </p>
+      </div>
+      <div class="intro_detail detail11 display_off">
+        <h1>Oberflächenwasser</h1>
+        <p class="intro_des">
+          Als Oberflächenwasser wird Wasser bezeichnet, das sich offen und ungebunden auf der Erdoberfläche befindet. Dazu zählen Oberflächengewässer wie Flüsse oder Seen und noch nicht versickertes Niederschlagswasser.
+        </p>
+      </div>
+      <div class="intro_detail detail12 display_off">
+        <h1>Externer Zufluss</h1>
+        <p class="intro_des">
+          Der externe Zufluss ist die Menge an Wasser, die aus angrenzenden Gebieten, wie beispielsweise anderen Ländern, in Flüsse und in das Grundwasser einfließt.
+        </p>
+      </div>
+      <div class="intro_detail detail13 display_off">
+        <h1>Grundwasser</h1>
+        <p class="intro_des">
+          Grundwasser ist Wasser unterhalb der Erdoberfläche, das durch Versickern von Niederschlägen oder Migration aus Seen und Flüssen dort eingelagert wird.
+        </p>
+      </div>
+      <div class="intro_detail detail14 display_off">
+        <p class="intro_des einleitung">
+          <a href="islands.html">Los geht's.</a>
+        </p>
+      </div>
     </div>
     <footer>
       <div class="siteInfo siteInfo2">

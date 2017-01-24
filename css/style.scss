@@ -5,7 +5,7 @@ $base_blue: #5B8FB1;
 @import "intro.scss";
 
 body {
-  background: #EFF3F3;
+  background: lighten(#efefef, 5%);
   margin: 0;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
@@ -14,7 +14,11 @@ body {
 a {
   display: block;
   width: 100%;
-  @include font-info;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+h2, h3, h4, p {
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 //.islands {
@@ -49,7 +53,7 @@ footer {
     float: right;
     width: 200px;
     height: 78px;
-    margin-right: 250px;
+    margin-right: 70px;
     line-height: 78px;
     color: white;
     text-decoration: none;
@@ -62,10 +66,10 @@ footer {
   width: 600px;
   height: 70px;
   margin: auto;
-  margin-top: 180px;
+  //margin-top: 180px;
   color: #fff;
   margin-top: 0;
-  margin-left: 250px;
+  margin-left: 70px;
 
   img, p {
     display: block;
@@ -75,9 +79,11 @@ footer {
   p {
     @include font-info;
     width: 490px;
-    margin-left: 30px;
+    //margin-left: 30px;
     margin-left: 20px;
+    margin-top: 15px;
     text-align: left;
+    line-height: 20px;
   }
 
   img {
@@ -87,7 +93,7 @@ footer {
 }
 
 .container {
-  min-height: 100%;
+  //min-height: 100%;
 }
 
 @import "wasserfall.scss";
@@ -126,3 +132,7 @@ footer {
 @import "touchpoint.scss";
 @import "intro_detail.scss";
 @import "insel_detail.scss";
+
+.container {
+  font-family: 'Alegreya Sans', sans-serif;
+}
