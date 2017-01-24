@@ -39,6 +39,7 @@ $(function () {
   	$('#klaranlage_person').html( klaeranlagen +' %');
 
     //resource_übersicht 1 8
+
     Highcharts.chart('uebersicht_resourcen', {
         chart: {
             type: 'bar'
@@ -97,6 +98,179 @@ $(function () {
         }]
     });
 
+    Highcharts.chart('entnahme_und_verbrauch', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Entnahme und Verbrauch'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Grundwasserentnahme', 'Oberflaechenwasserentnahme', 'Verbrauch: Landwirtschaft', 'Verbrauch: Industrie'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: null,
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' Millionen m³'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -450,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Millionen m³',
+            data: [grundwasserentnahme,oberflaechenwasserentnahme,verbrauch_Landwirtschaft,verbrauch_Industrie]
+        }]
+    });
+
+    $('.touchpoint').click(function() {
+    Highcharts.chart('uebersicht_resourcen', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Ressourcen und Abfluss'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Süßwasserressourcen', 'Abfluss'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: null,
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' Milliarden m³'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -250,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        colors: ['#A2C9DD'],
+        series: [{
+            name: 'Milliarden m³',
+            // data: [19.9,15.6]
+            data: [suesswasserressourcen,abfluss]
+        }]
+    });
+
+    //Entnahme
+    Highcharts.chart('entnahme_und_verbrauch', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Entnahme und Verbrauch'
+        },
+        subtitle: {
+            text: null
+        },
+        xAxis: {
+            categories: ['Grundwasserentnahme', 'Oberflaechenwasserentnahme', 'Verbrauch: Landwirtschaft', 'Verbrauch: Industrie'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: null,
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' Millionen m³'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -450,
+            y: 250,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Millionen m³',
+            data: [grundwasserentnahme,oberflaechenwasserentnahme,verbrauch_Landwirtschaft,verbrauch_Industrie]
+        }]
+    });
+
+
     //klare
     Highcharts.chart('klare', {
 
@@ -112,12 +286,12 @@ $(function () {
             }
         },
 
-        subtitle: {
-         text: 'Angaben in % der Bevölkerung',
-            style: {
-                fontSize: '12px'
-            }
-        },
+        // subtitle: {
+        //  text: 'Angaben in % der Bevölkerung',
+        //     style: {
+        //         fontSize: '12px'
+        //     }
+        // },
 
         tooltip: {
             borderWidth: 0,
@@ -206,430 +380,716 @@ $(function () {
 
 
 
-    //Entnahme
-    Highcharts.chart('entnahme_und_verbrauch', {
+    // verbrauch
+    Highcharts.chart('verbrauch', {
+
         chart: {
-            type: 'bar'
+            type: 'solidgauge',
+            marginTop: 60,
+            animation: true
         },
+
         title: {
-            text: 'Entnahme und Verbrauch'
-        },
-        subtitle: {
-            text: null
-        },
-        xAxis: {
-            categories: ['Grundwasserentnahme', 'Oberflaechenwasserentnahme', 'Verbrauch: Landwirtschaft', 'Verbrauch: Industrie'],
-            title: {
-                text: null
+            text: 'Verbrauch',
+            style: {
+                fontSize: '16px'
             }
         },
+
+        tooltip: {
+            borderWidth: 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '16px'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            positioner: function (labelWidth) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 180
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for Move
+                outerRadius: '112%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Exercise
+                outerRadius: '87%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Stand
+                outerRadius: '62%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }]
+        },
+
         yAxis: {
             min: 0,
-            title: {
-                text: null,
-                align: 'high'
-            },
-            labels: {
-                overflow: 'justify'
-            }
+            max: 149,
+            lineWidth: 0,
+            tickPositions: []
         },
-        tooltip: {
-            valueSuffix: ' Millionen m³'
-        },
+
         plotOptions: {
-            bar: {
+            solidgauge: {
+                borderWidth: '34px',
                 dataLabels: {
                     enabled: false
-                }
+                },
+                linecap: 'round',
+                stickyTracking: false
             }
         },
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'top',
-            x: -450,
-            y: 250,
-            floating: true,
-            borderWidth: 1,
-            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-            shadow: true
-        },
-        credits: {
-            enabled: false
-        },
+
         series: [{
-            name: 'Millionen m³',
-            data: [grundwasserentnahme,oberflaechenwasserentnahme,verbrauch_Landwirtschaft,verbrauch_Industrie]
+            name: 'Irland',
+            borderColor: Highcharts.getOptions().colors[0],
+            data: [{
+                color: Highcharts.getOptions().colors[0],
+                radius: '100%',
+                innerRadius: '100%',
+                y: 144
+            }]
+        }, {
+            name: landername,
+            borderColor: Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '75%',
+                innerRadius: '75%',
+                y: verbrauch_PrivateHaushalte
+            }]
+        }, {
+            name: 'Belgien',
+            borderColor: Highcharts.getOptions().colors[2],
+            data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '50%',
+                innerRadius: '50%',
+                y: 26
+            }]
         }]
     });
 
-    // verbrauch
-    Highcharts.chart('verbrauch', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Verbrauch'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'm3/pro Einwohner'
-            }
 
-        },
-     legend: {
-           enabled: false
-            },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-
-        tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-
-        series: [{
-            name: 'Länder',
-            colorByPoint: true,
-            data: [{
-                name: 'Irland',
-                y: 144
-            }, {
-                name: landername,
-                y: verbrauch_PrivateHaushalte
-            }, {
-                name: 'Belgien',
-                y: 26
-            }],
-        }],
-      }
-    );
-
-    //Industrie_1
+    //Industrie_1  in Mio. m3
     Highcharts.chart('wirtschaft_1', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Verbrauch Landwirtschaft'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'in Mio. m3'
-            }
 
+        chart: {
+            type: 'solidgauge',
+            marginTop: 60,
+            animation: true
         },
-        legend: {
-           enabled: false
-            },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+
+        title: {
+            text: 'Verbrauch Landwirtschaft',
+            style: {
+                fontSize: '16px'
             }
         },
 
         tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            borderWidth: 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '16px'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            positioner: function (labelWidth) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 180
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for Move
+                outerRadius: '112%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Exercise
+                outerRadius: '87%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Stand
+                outerRadius: '62%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }]
+        },
+
+        yAxis: {
+            min: 0,
+            max: 150,
+            lineWidth: 0,
+            tickPositions: []
+        },
+
+        plotOptions: {
+            solidgauge: {
+                borderWidth: '34px',
+                dataLabels: {
+                    enabled: false
+                },
+                linecap: 'round',
+                stickyTracking: false
+            }
         },
 
         series: [{
-            name: 'Länder',
-            colorByPoint: true,
+            name: 'Polen',
+            borderColor: Highcharts.getOptions().colors[0],
             data: [{
-                name: 'Polen',
+                color: Highcharts.getOptions().colors[0],
+                radius: '100%',
+                innerRadius: '100%',
                 y: 145.2
-            }, {
-                name: landername,
+            }]
+        }, {
+            name: landername,
+            borderColor: Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '75%',
+                innerRadius: '75%',
                 y: verbrauch_Landwirtschaft
-            }, {
-                name: 'Kroatien',
+            }]
+        }, {
+            name: 'Kroatien',
+            borderColor: Highcharts.getOptions().colors[2],
+            data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '50%',
+                innerRadius: '50%',
                 y: 0
-            }],
-        }],
+            }]
+        }]
     });
+
 
     //Industrie_2
     Highcharts.chart('wirtschaft_2', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Verbrauch Industrie'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'in Mio. m3'
-            }
 
+        chart: {
+            type: 'solidgauge',
+            marginTop: 60,
+            animation: true
         },
-        legend: {
-           enabled: false
-            },
-        plotOptions: {
-          column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+
+        title: {
+            text: 'Verbrauch Industrie',
+            style: {
+                fontSize: '16px'
             }
         },
 
         tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            borderWidth: 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '16px'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            positioner: function (labelWidth) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 180
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for Move
+                outerRadius: '112%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Exercise
+                outerRadius: '87%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Stand
+                outerRadius: '62%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }]
+        },
+
+        yAxis: {
+            min: 0,
+            max: 375,
+            lineWidth: 0,
+            tickPositions: []
+        },
+
+        plotOptions: {
+            solidgauge: {
+                borderWidth: '34px',
+                dataLabels: {
+                    enabled: false
+                },
+                linecap: 'round',
+                stickyTracking: false
+            }
         },
 
         series: [{
-            name: 'Länder',
-            colorByPoint: true,
+            name: 'Spanien',
+            borderColor: Highcharts.getOptions().colors[0],
             data: [{
-                name: 'Spanien',
+                color: Highcharts.getOptions().colors[0],
+                radius: '100%',
+                innerRadius: '100%',
                 y: 361.9
-            }, {
-                name: landername,
+            }]
+        }, {
+            name: landername,
+            borderColor: Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '75%',
+                innerRadius: '75%',
                 y: verbrauch_Industrie
-            }, {
-                name: 'Malta',
+            }]
+        }, {
+            name: 'Malta',
+            borderColor: Highcharts.getOptions().colors[2],
+            data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '50%',
+                innerRadius: '50%',
                 y: 2.1
-            }],
-        }],
-      }
-    );
+            }]
+        }]
+    });
 
     //entnamhe
     Highcharts.chart('entnahme_1', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Grundwasserentnahme'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'in Mio. m3'
-            }
 
+        chart: {
+            type: 'solidgauge',
+            marginTop: 60,
+            animation: true
         },
-        legend: {
-           enabled: false
-            },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+
+        title: {
+            text: 'Grundwasserentnahme',
+            style: {
+                fontSize: '16px'
             }
         },
 
         tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            borderWidth: 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '16px'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            positioner: function (labelWidth) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 180
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for Move
+                outerRadius: '112%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Exercise
+                outerRadius: '87%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Stand
+                outerRadius: '62%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }]
+        },
+
+        yAxis: {
+            min: 0,
+            max: 7100,
+            lineWidth: 0,
+            tickPositions: []
+        },
+
+        plotOptions: {
+            solidgauge: {
+                borderWidth: '34px',
+                dataLabels: {
+                    enabled: false
+                },
+                linecap: 'round',
+                stickyTracking: false
+            }
         },
 
         series: [{
-            name: 'Länder',
-            colorByPoint: true,
+            name: 'Spanien',
+            borderColor: Highcharts.getOptions().colors[0],
             data: [{
-                name: 'Spanien',
+                color: Highcharts.getOptions().colors[0],
+                radius: '100%',
+                innerRadius: '100%',
                 y: 6884
-            }, {
-                name: landername,
+            }]
+        }, {
+            name: landername,
+            borderColor: Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '75%',
+                innerRadius: '75%',
                 y: grundwasserentnahme
-            }, {
-                name: 'Luxemburg',
+            }]
+        }, {
+            name: 'Luxemburg',
+            borderColor: Highcharts.getOptions().colors[2],
+            data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '50%',
+                innerRadius: '50%',
                 y: 25
-            }],
-        }],
+            }]
+        }]
     });
 
     Highcharts.chart('entnahme_2', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Oberflächenwasserentnahme'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'in Mio. m3'
-            }
 
+        chart: {
+            type: 'solidgauge',
+            marginTop: 60,
+            animation: true
         },
-     legend: {
-           enabled: false
-            },
-        plotOptions: {
-          column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+
+        title: {
+            text: 'Oberflächenwasserentnahme',
+            style: {
+                fontSize: '16px'
             }
         },
 
         tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            borderWidth: 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '16px'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            positioner: function (labelWidth) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 180
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for Move
+                outerRadius: '112%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Exercise
+                outerRadius: '87%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Stand
+                outerRadius: '62%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }]
+        },
+
+        yAxis: {
+            min: 0,
+            max: 31700,
+            lineWidth: 0,
+            tickPositions: []
+        },
+
+        plotOptions: {
+            solidgauge: {
+                borderWidth: '34px',
+                dataLabels: {
+                    enabled: false
+                },
+                linecap: 'round',
+                stickyTracking: false
+            }
         },
 
         series: [{
-            name: 'Länder',
-            colorByPoint: true,
+            name: 'Spanien',
+            borderColor: Highcharts.getOptions().colors[0],
             data: [{
-                name: 'Spanien',
+                color: Highcharts.getOptions().colors[0],
+                radius: '100%',
+                innerRadius: '100%',
                 y: 30465
-            }, {
-                name: landername,
-                y: oberflaechenwasserentnahme
-            }, {
-                name: 'Malta',
+            }]
+        }, {
+            name: landername,
+            borderColor: Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '75%',
+                innerRadius: '75%',
+                y: grundwasserentnahme
+            }]
+        }, {
+            name: 'Malta',
+            borderColor: Highcharts.getOptions().colors[2],
+            data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '50%',
+                innerRadius: '50%',
                 y: 0
-            }],
-        }],
-      }
-    );
+            }]
+        }]
+    });
 
 
 
     Highcharts.chart('abfluss', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Abfluss'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'in Mrd. m3'
-            }
 
+        chart: {
+            type: 'solidgauge',
+            marginTop: 60,
+            animation: true
         },
-     legend: {
-           enabled: false
-            },
-        plotOptions: {
-          column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+
+        title: {
+            text: 'Abfluss',
+            style: {
+                fontSize: '16px'
             }
         },
 
         tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
+            borderWidth: 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '16px'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            positioner: function (labelWidth) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 180
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for Move
+                outerRadius: '112%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Exercise
+                outerRadius: '87%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }, { // Track for Stand
+                outerRadius: '62%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
+                borderWidth: 0
+            }]
+        },
+
+        yAxis: {
+            min: 0,
+            max: 193,
+            lineWidth: 0,
+            tickPositions: []
+        },
+
+        plotOptions: {
+            solidgauge: {
+                borderWidth: '34px',
+                dataLabels: {
+                    enabled: false
+                },
+                linecap: 'round',
+                stickyTracking: false
+            }
         },
 
         series: [{
-            name: 'Länder',
-            colorByPoint: true,
+            name: 'Schweden',
+            borderColor: Highcharts.getOptions().colors[0],
             data: [{
-                name: 'Schweden',
+                color: Highcharts.getOptions().colors[0],
+                radius: '100%',
+                innerRadius: '100%',
                 y: 186.2
-            }, {
-                name: landername,
+            }]
+        }, {
+            name: landername,
+            borderColor: Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '75%',
+                innerRadius: '75%',
                 y: abfluss
-            }, {
-                name: 'Malta',
+            }]
+        }, {
+            name: 'Malta',
+            borderColor: Highcharts.getOptions().colors[2],
+            data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '50%',
+                innerRadius: '50%',
                 y: 0.1
-            }],
-        }],
-      }
-    );
+            }]
+        }]
+    });
 
     // suesswasser
-    Highcharts.chart('suesswasser', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Süßwasserressourcen'
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'in m3'
-            }
+      Highcharts.chart('suesswasser', {
 
-        },
-     legend: {
-           enabled: false
-            },
-        plotOptions: {
-          column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
+          chart: {
+              type: 'solidgauge',
+              marginTop: 60,
+              animation: true
+          },
 
-        tooltip: {
-            headerFormat: '<span style="font-size:14px;color:#dedede"></span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:12px;"> </td>' +
-                '<td style="padding:0;font-size:12px">{point.y:.1f}</td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
+          title: {
+              text: 'Süßwasserressourcen',
+              style: {
+                  fontSize: '16px'
+              }
+          },
 
-        series: [{
-            name: 'Länder',
-            colorByPoint: true,
-            data: [{
-                name: 'Deutschland',
-                y: 188
-            }, {
-                name: landername,
-                y: suesswasserressourcen
-            }, {
-                name: 'Malta',
-                y: 0.1
-            }],
-        }],
-      }
-    );
+          tooltip: {
+              borderWidth: 0,
+              backgroundColor: 'none',
+              shadow: false,
+              style: {
+                  fontSize: '16px'
+              },
+              pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+              positioner: function (labelWidth) {
+                  return {
+                      x: 200 - labelWidth / 2,
+                      y: 180
+                  };
+              }
+          },
+
+          pane: {
+              startAngle: 0,
+              endAngle: 360,
+              background: [{ // Track for Move
+                  outerRadius: '112%',
+                  innerRadius: '88%',
+                  backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
+                  borderWidth: 0
+              }, { // Track for Exercise
+                  outerRadius: '87%',
+                  innerRadius: '63%',
+                  backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
+                  borderWidth: 0
+              }, { // Track for Stand
+                  outerRadius: '62%',
+                  innerRadius: '38%',
+                  backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
+                  borderWidth: 0
+              }]
+          },
+
+          yAxis: {
+              min: 0,
+              max: 195,
+              lineWidth: 0,
+              tickPositions: []
+          },
+
+          plotOptions: {
+              solidgauge: {
+                  borderWidth: '34px',
+                  dataLabels: {
+                      enabled: false
+                  },
+                  linecap: 'round',
+                  stickyTracking: false
+              }
+          },
+
+          series: [{
+              name: 'Deutschland',
+              borderColor: Highcharts.getOptions().colors[0],
+              data: [{
+                  color: Highcharts.getOptions().colors[0],
+                  radius: '100%',
+                  innerRadius: '100%',
+                  y: 188
+              }]
+          }, {
+              name: landername,
+              borderColor: Highcharts.getOptions().colors[1],
+              data: [{
+                  color: Highcharts.getOptions().colors[1],
+                  radius: '75%',
+                  innerRadius: '75%',
+                  y: suesswasserressourcen
+              }]
+          }, {
+              name: 'Malta',
+              borderColor: Highcharts.getOptions().colors[2],
+              data: [{
+                  color: Highcharts.getOptions().colors[2],
+                  radius: '50%',
+                  innerRadius: '50%',
+                  y: 0.1
+              }]
+          }]
+      });
+
+    });
+
 
 });

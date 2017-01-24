@@ -56,7 +56,7 @@ body {
     width: 250px;
     height: 50px;
     padding: 10px;
-    margin: 30px auto 20px;
+    margin: 50px auto 20px;
     font-size: 18px;
 
     text-align: center;
@@ -157,15 +157,15 @@ footer.start_footer {
 
 #introYN {
   width: 100%;
-  height: 65px;
-  margin: auto;
+  height: 80px;
+  margin: 20px auto 10px;
   text-align: center;
 
   .buttonRow {
     width: 600px;
     margin: auto;
     min-height: 50px;
-    margin-top: 15px;
+    margin-top: 30px;
 
     a {
       display: block;

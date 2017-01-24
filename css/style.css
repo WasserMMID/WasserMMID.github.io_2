@@ -27,7 +27,41 @@
     font-size: 20px; }
 
 .islands_con {
-  margin-top: 70px; }
+  margin-top: 40px; }
+
+.island_des_title {
+  display: block;
+  position: absolute;
+  width: 600px;
+  min-height: 90px;
+  top: 140px;
+  left: 70px;
+  font-size: 19px;
+  line-height: 30px;
+  color: #000; }
+  .island_des_title p + p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666; }
+
+.island_des_title_init {
+  width: 400px;
+  top: 300px; }
+  .island_des_title_init img {
+    display: block;
+    float: left;
+    margin-top: 50px;
+    width: 30px; }
+    .island_des_title_init img + p {
+      display: block;
+      float: left;
+      font-size: 15px;
+      line-height: 20px;
+      width: 320px;
+      margin-top: 50px;
+      margin-left: 20px;
+      color: #666666; }
 
 .islands_nav {
   display: block;
@@ -111,17 +145,17 @@
 
 @keyframes positionChange1 {
   0% {
-    top: 347px;
-    left: 956px;
-    z-index: 223; }
+    top: 478px;
+    left: 458px;
+    z-index: 291; }
   100% {
     top: 67.2%;
     left: 3.5%; } }
 @-webkit-keyframes positionChange1 {
   0% {
-    top: 370px;
-    left: 390px;
-    z-index: 57; }
+    top: 237px;
+    left: 382px;
+    z-index: 152; }
   100% {
     top: 67.2%;
     left: 3.5%; } }
@@ -164,17 +198,17 @@
 
 @keyframes positionChange2 {
   0% {
-    top: 50px;
-    left: 321px;
-    z-index: 124; }
+    top: 462px;
+    left: 786px;
+    z-index: 277; }
   100% {
     top: 64.8%;
     left: 12.40559%; } }
 @-webkit-keyframes positionChange2 {
   0% {
-    top: 278px;
-    left: 943px;
-    z-index: 158; }
+    top: 9px;
+    left: 279px;
+    z-index: 258; }
   100% {
     top: 64.8%;
     left: 12.40559%; } }
@@ -217,17 +251,17 @@
 
 @keyframes positionChange3 {
   0% {
-    top: 459px;
-    left: 381px;
+    top: 134px;
+    left: 122px;
     z-index: 159; }
   100% {
     top: 62.4%;
     left: 19.23909%; } }
 @-webkit-keyframes positionChange3 {
   0% {
-    top: 423px;
-    left: 401px;
-    z-index: 102; }
+    top: 84px;
+    left: 454px;
+    z-index: 237; }
   100% {
     top: 62.4%;
     left: 19.23909%; } }
@@ -270,17 +304,17 @@
 
 @keyframes positionChange4 {
   0% {
-    top: 435px;
-    left: 853px;
-    z-index: 297; }
+    top: 481px;
+    left: 145px;
+    z-index: 283; }
   100% {
     top: 60%;
     left: 25%; } }
 @-webkit-keyframes positionChange4 {
   0% {
-    top: 84px;
-    left: 427px;
-    z-index: 78; }
+    top: 402px;
+    left: 929px;
+    z-index: 179; }
   100% {
     top: 60%;
     left: 25%; } }
@@ -323,17 +357,17 @@
 
 @keyframes positionChange5 {
   0% {
-    top: 45px;
-    left: 344px;
-    z-index: 182; }
+    top: 134px;
+    left: 401px;
+    z-index: 269; }
   100% {
     top: 57.6%;
     left: 30.07546%; } }
 @-webkit-keyframes positionChange5 {
   0% {
-    top: 194px;
-    left: 349px;
-    z-index: 222; }
+    top: 33px;
+    left: 771px;
+    z-index: 238; }
   100% {
     top: 57.6%;
     left: 30.07546%; } }
@@ -376,17 +410,17 @@
 
 @keyframes positionChange6 {
   0% {
-    top: 17px;
-    left: 19px;
-    z-index: 80; }
+    top: 128px;
+    left: 994px;
+    z-index: 263; }
   100% {
     top: 55.2%;
     left: 34.66403%; } }
 @-webkit-keyframes positionChange6 {
   0% {
-    top: 54px;
-    left: 283px;
-    z-index: 70; }
+    top: 174px;
+    left: 905px;
+    z-index: 289; }
   100% {
     top: 55.2%;
     left: 34.66403%; } }
@@ -429,17 +463,17 @@
 
 @keyframes positionChange7 {
   0% {
-    top: 218px;
-    left: 648px;
-    z-index: 299; }
+    top: 131px;
+    left: 396px;
+    z-index: 224; }
   100% {
     top: 52.8%;
     left: 38.88365%; } }
 @-webkit-keyframes positionChange7 {
   0% {
-    top: 117px;
-    left: 984px;
-    z-index: 276; }
+    top: 455px;
+    left: 98px;
+    z-index: 79; }
   100% {
     top: 52.8%;
     left: 38.88365%; } }
@@ -482,17 +516,17 @@
 
 @keyframes positionChange8 {
   0% {
-    top: 78px;
-    left: 254px;
-    z-index: 186; }
+    top: 136px;
+    left: 822px;
+    z-index: 291; }
   100% {
     top: 50.4%;
     left: 42.81118%; } }
 @-webkit-keyframes positionChange8 {
   0% {
-    top: 459px;
-    left: 46px;
-    z-index: 160; }
+    top: 148px;
+    left: 513px;
+    z-index: 182; }
   100% {
     top: 50.4%;
     left: 42.81118%; } }
@@ -535,17 +569,17 @@
 
 @keyframes positionChange9 {
   0% {
-    top: 271px;
-    left: 473px;
-    z-index: 55; }
+    top: 6px;
+    left: 194px;
+    z-index: 12; }
   100% {
     top: 48%;
     left: 46.5%; } }
 @-webkit-keyframes positionChange9 {
   0% {
-    top: 134px;
-    left: 996px;
-    z-index: 199; }
+    top: 404px;
+    left: 360px;
+    z-index: 188; }
   100% {
     top: 48%;
     left: 46.5%; } }
@@ -588,17 +622,17 @@
 
 @keyframes positionChange10 {
   0% {
-    top: 284px;
-    left: 121px;
-    z-index: 123; }
+    top: 258px;
+    left: 994px;
+    z-index: 289; }
   100% {
     top: 45.6%;
     left: 49.98897%; } }
 @-webkit-keyframes positionChange10 {
   0% {
-    top: 99px;
-    left: 689px;
-    z-index: 154; }
+    top: 258px;
+    left: 460px;
+    z-index: 142; }
   100% {
     top: 45.6%;
     left: 49.98897%; } }
@@ -641,17 +675,17 @@
 
 @keyframes positionChange11 {
   0% {
-    top: 482px;
-    left: 577px;
-    z-index: 88; }
+    top: 467px;
+    left: 852px;
+    z-index: 247; }
   100% {
     top: 43.2%;
     left: 53.30743%; } }
 @-webkit-keyframes positionChange11 {
   0% {
-    top: 177px;
-    left: 559px;
-    z-index: 246; }
+    top: 37px;
+    left: 889px;
+    z-index: 53; }
   100% {
     top: 43.2%;
     left: 53.30743%; } }
@@ -694,17 +728,17 @@
 
 @keyframes positionChange12 {
   0% {
-    top: 421px;
-    left: 638px;
-    z-index: 42; }
+    top: 167px;
+    left: 384px;
+    z-index: 237; }
   100% {
     top: 40.8%;
     left: 56.47818%; } }
 @-webkit-keyframes positionChange12 {
   0% {
-    top: 192px;
-    left: 815px;
-    z-index: 159; }
+    top: 313px;
+    left: 11px;
+    z-index: 269; }
   100% {
     top: 40.8%;
     left: 56.47818%; } }
@@ -747,17 +781,17 @@
 
 @keyframes positionChange13 {
   0% {
-    top: 419px;
-    left: 781px;
-    z-index: 49; }
+    top: 347px;
+    left: 314px;
+    z-index: 46; }
   100% {
     top: 38.4%;
     left: 59.51935%; } }
 @-webkit-keyframes positionChange13 {
   0% {
-    top: 123px;
-    left: 360px;
-    z-index: 35; }
+    top: 341px;
+    left: 707px;
+    z-index: 28; }
   100% {
     top: 38.4%;
     left: 59.51935%; } }
@@ -800,17 +834,17 @@
 
 @keyframes positionChange14 {
   0% {
-    top: 210px;
-    left: 865px;
-    z-index: 92; }
+    top: 204px;
+    left: 389px;
+    z-index: 187; }
   100% {
     top: 36.0%;
     left: 62.44563%; } }
 @-webkit-keyframes positionChange14 {
   0% {
-    top: 176px;
-    left: 66px;
-    z-index: 276; }
+    top: 463px;
+    left: 723px;
+    z-index: 194; }
   100% {
     top: 36.0%;
     left: 62.44563%; } }
@@ -853,17 +887,17 @@
 
 @keyframes positionChange15 {
   0% {
-    top: 113px;
-    left: 582px;
-    z-index: 106; }
+    top: 109px;
+    left: 535px;
+    z-index: 143; }
   100% {
     top: 33.6%;
     left: 65.26914%; } }
 @-webkit-keyframes positionChange15 {
   0% {
-    top: 195px;
-    left: 513px;
-    z-index: 124; }
+    top: 201px;
+    left: 214px;
+    z-index: 146; }
   100% {
     top: 33.6%;
     left: 65.26914%; } }
@@ -906,17 +940,17 @@
 
 @keyframes positionChange16 {
   0% {
-    top: 287px;
-    left: 871px;
-    z-index: 265; }
+    top: 38px;
+    left: 658px;
+    z-index: 190; }
   100% {
     top: 31.2%;
     left: 68%; } }
 @-webkit-keyframes positionChange16 {
   0% {
-    top: 102px;
-    left: 594px;
-    z-index: 168; }
+    top: 331px;
+    left: 707px;
+    z-index: 253; }
   100% {
     top: 31.2%;
     left: 68%; } }
@@ -959,17 +993,17 @@
 
 @keyframes positionChange17 {
   0% {
-    top: 349px;
-    left: 132px;
-    z-index: 264; }
+    top: 158px;
+    left: 790px;
+    z-index: 216; }
   100% {
     top: 28.8%;
     left: 70.64677%; } }
 @-webkit-keyframes positionChange17 {
   0% {
-    top: 135px;
-    left: 721px;
-    z-index: 80; }
+    top: 115px;
+    left: 555px;
+    z-index: 231; }
   100% {
     top: 28.8%;
     left: 70.64677%; } }
@@ -1012,17 +1046,17 @@
 
 @keyframes positionChange18 {
   0% {
-    top: 9px;
-    left: 919px;
-    z-index: 61; }
+    top: 272px;
+    left: 855px;
+    z-index: 76; }
   100% {
     top: 26.4%;
     left: 73.21677%; } }
 @-webkit-keyframes positionChange18 {
   0% {
-    top: 207px;
-    left: 142px;
-    z-index: 113; }
+    top: 471px;
+    left: 226px;
+    z-index: 277; }
   100% {
     top: 26.4%;
     left: 73.21677%; } }
@@ -1065,17 +1099,17 @@
 
 @keyframes positionChange19 {
   0% {
-    top: 312px;
-    left: 527px;
-    z-index: 241; }
+    top: 404px;
+    left: 994px;
+    z-index: 107; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
 @-webkit-keyframes positionChange19 {
   0% {
-    top: 405px;
-    left: 246px;
-    z-index: 272; }
+    top: 300px;
+    left: 21px;
+    z-index: 87; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
@@ -1122,17 +1156,17 @@
 
 @keyframes positionChange19 {
   0% {
-    top: 699px;
-    left: 630px;
-    z-index: 37; }
+    top: 597px;
+    left: 124px;
+    z-index: 48; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
 @-webkit-keyframes positionChange19 {
   0% {
-    top: 726px;
-    left: 747px;
-    z-index: 200; }
+    top: 501px;
+    left: 736px;
+    z-index: 157; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
@@ -1179,17 +1213,17 @@
 
 @keyframes positionChange20 {
   0% {
-    top: 728px;
-    left: 568px;
-    z-index: 27; }
+    top: 325px;
+    left: 589px;
+    z-index: 261; }
   100% {
     top: 21.6%;
     left: 78.15092%; } }
 @-webkit-keyframes positionChange20 {
   0% {
-    top: 765px;
-    left: 599px;
-    z-index: 249; }
+    top: 61px;
+    left: 52px;
+    z-index: 66; }
   100% {
     top: 21.6%;
     left: 78.15092%; } }
@@ -1236,17 +1270,17 @@
 
 @keyframes positionChange21 {
   0% {
-    top: 687px;
-    left: 549px;
-    z-index: 133; }
+    top: 153px;
+    left: 951px;
+    z-index: 66; }
   100% {
     top: 19.2%;
     left: 80.52538%; } }
 @-webkit-keyframes positionChange21 {
   0% {
-    top: 676px;
-    left: 381px;
-    z-index: 1; }
+    top: 207px;
+    left: 88px;
+    z-index: 54; }
   100% {
     top: 19.2%;
     left: 80.52538%; } }
@@ -1293,17 +1327,17 @@
 
 @keyframes positionChange22 {
   0% {
-    top: 631px;
-    left: 132px;
-    z-index: 52; }
+    top: 727px;
+    left: 365px;
+    z-index: 69; }
   100% {
     top: 16.8%;
     left: 82.84394%; } }
 @-webkit-keyframes positionChange22 {
   0% {
-    top: 661px;
-    left: 579px;
-    z-index: 253; }
+    top: 85px;
+    left: 169px;
+    z-index: 76; }
   100% {
     top: 16.8%;
     left: 82.84394%; } }
@@ -1350,17 +1384,17 @@
 
 @keyframes positionChange23 {
   0% {
-    top: 694px;
-    left: 379px;
-    z-index: 44; }
+    top: 7px;
+    left: 270px;
+    z-index: 169; }
   100% {
     top: 14.4%;
     left: 85.11038%; } }
 @-webkit-keyframes positionChange23 {
   0% {
-    top: 457px;
-    left: 147px;
-    z-index: 234; }
+    top: 331px;
+    left: 910px;
+    z-index: 108; }
   100% {
     top: 14.4%;
     left: 85.11038%; } }
@@ -1407,17 +1441,17 @@
 
 @keyframes positionChange24 {
   0% {
-    top: 34px;
-    left: 705px;
-    z-index: 42; }
+    top: 8px;
+    left: 437px;
+    z-index: 284; }
   100% {
     top: 12.0%;
     left: 87.32806%; } }
 @-webkit-keyframes positionChange24 {
   0% {
-    top: 268px;
-    left: 248px;
-    z-index: 155; }
+    top: 592px;
+    left: 911px;
+    z-index: 211; }
   100% {
     top: 12.0%;
     left: 87.32806%; } }
@@ -1464,17 +1498,17 @@
 
 @keyframes positionChange25 {
   0% {
-    top: 484px;
-    left: 406px;
-    z-index: 180; }
+    top: 707px;
+    left: 23px;
+    z-index: 275; }
   100% {
     top: 9.6%;
     left: 89.5%; } }
 @-webkit-keyframes positionChange25 {
   0% {
-    top: 110px;
-    left: 796px;
-    z-index: 227; }
+    top: 213px;
+    left: 642px;
+    z-index: 83; }
   100% {
     top: 9.6%;
     left: 89.5%; } }
@@ -1521,17 +1555,17 @@
 
 @keyframes positionChange26 {
   0% {
-    top: 534px;
-    left: 16px;
-    z-index: 243; }
+    top: 425px;
+    left: 491px;
+    z-index: 41; }
   100% {
     top: 7.2%;
     left: 91.62892%; } }
 @-webkit-keyframes positionChange26 {
   0% {
-    top: 615px;
-    left: 673px;
-    z-index: 31; }
+    top: 152px;
+    left: 354px;
+    z-index: 177; }
   100% {
     top: 7.2%;
     left: 91.62892%; } }
@@ -1578,17 +1612,17 @@
 
 @keyframes positionChange27 {
   0% {
-    top: 685px;
-    left: 694px;
-    z-index: 250; }
+    top: 567px;
+    left: 262px;
+    z-index: 221; }
   100% {
     top: 4.8%;
     left: 93.71728%; } }
 @-webkit-keyframes positionChange27 {
   0% {
-    top: 366px;
-    left: 909px;
-    z-index: 199; }
+    top: 83px;
+    left: 514px;
+    z-index: 163; }
   100% {
     top: 4.8%;
     left: 93.71728%; } }
@@ -1635,17 +1669,17 @@
 
 @keyframes positionChange28 {
   0% {
-    top: 794px;
-    left: 453px;
-    z-index: 5; }
+    top: 256px;
+    left: 337px;
+    z-index: 57; }
   100% {
     top: 2.4%;
     left: 95.76731%; } }
 @-webkit-keyframes positionChange28 {
   0% {
-    top: 248px;
-    left: 565px;
-    z-index: 187; }
+    top: 406px;
+    left: 80px;
+    z-index: 277; }
   100% {
     top: 2.4%;
     left: 95.76731%; } }
@@ -1677,7 +1711,7 @@
   width: 140px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 18px;
+  font-size: 13 px;
   z-index: -1000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1706,7 +1740,7 @@
   width: 135px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 16px;
+  font-size: 13 px;
   z-index: -2000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1735,7 +1769,7 @@
   width: 130.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 14px;
+  font-size: 13 px;
   z-index: -3000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1764,7 +1798,7 @@
   width: 125px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 12px;
+  font-size: 13 px;
   z-index: -4000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1793,7 +1827,7 @@
   width: 120px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 10px;
+  font-size: 13 px;
   z-index: -5000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1822,7 +1856,7 @@
   width: 115.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 8.0px;
+  font-size: 13 px;
   z-index: -6000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1851,7 +1885,7 @@
   width: 110.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 6.0px;
+  font-size: 13 px;
   z-index: -7000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1880,7 +1914,7 @@
   width: 105.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 4.0px;
+  font-size: 13 px;
   z-index: -8000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1909,7 +1943,7 @@
   width: 100px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 2.0px;
+  font-size: 13 px;
   z-index: -9000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1938,7 +1972,7 @@
   width: 95px;
   text-align: center;
   color: #5B8FB1;
-  font-size: 0px;
+  font-size: 13 px;
   z-index: -10000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1967,7 +2001,7 @@
   width: 90.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -2.0px;
+  font-size: 13 px;
   z-index: -11000;
   opacity: 1;
   animation: 4s fontChange;
@@ -1996,7 +2030,7 @@
   width: 85.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -4.0px;
+  font-size: 13 px;
   z-index: -12000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2025,7 +2059,7 @@
   width: 80px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -6.0px;
+  font-size: 13 px;
   z-index: -13000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2054,7 +2088,7 @@
   width: 75.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -8.0px;
+  font-size: 13 px;
   z-index: -14000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2083,7 +2117,7 @@
   width: 70px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -10px;
+  font-size: 13 px;
   z-index: -15000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2112,7 +2146,7 @@
   width: 65.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -12.0px;
+  font-size: 13 px;
   z-index: -16000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2141,7 +2175,7 @@
   width: 60.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -14.0px;
+  font-size: 13 px;
   z-index: -17000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2170,7 +2204,7 @@
   width: 55.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -16px;
+  font-size: 13 px;
   z-index: -18000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2199,7 +2233,7 @@
   width: 50.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -18.0px;
+  font-size: 13 px;
   z-index: -19000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2228,7 +2262,7 @@
   width: 45.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -20px;
+  font-size: 13 px;
   z-index: -20000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2257,7 +2291,7 @@
   width: 40.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -22px;
+  font-size: 13 px;
   z-index: -21000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2286,7 +2320,7 @@
   width: 35.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -24.0px;
+  font-size: 13 px;
   z-index: -22000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2315,7 +2349,7 @@
   width: 30.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -26.0px;
+  font-size: 13 px;
   z-index: -23000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2344,7 +2378,7 @@
   width: 25.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -28.0px;
+  font-size: 13 px;
   z-index: -24000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2373,7 +2407,7 @@
   width: 20.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -30px;
+  font-size: 13 px;
   z-index: -25000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2402,7 +2436,7 @@
   width: 15.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -32px;
+  font-size: 13 px;
   z-index: -26000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2431,7 +2465,7 @@
   width: 10.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -34px;
+  font-size: 13 px;
   z-index: -27000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2460,7 +2494,7 @@
   width: 5.0px;
   text-align: center;
   color: #5B8FB1;
-  font-size: -36.0px;
+  font-size: 13 px;
   z-index: -28000;
   opacity: 1;
   animation: 4s fontChange;
@@ -2481,111 +2515,6 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
-.island_des_title {
-  display: block;
-  position: absolute;
-  width: 600px;
-  min-height: 90px;
-  top: 120px;
-  left: 70px;
-  font-size: 19px;
-  line-height: 30px;
-  color: #000; }
-  .island_des_title p + p {
-    font-size: 14px; }
-
-.island_des_nr_6 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_7 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_8 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_9 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_10 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_11 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_12 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_13 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_14 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_15 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_16 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_17 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_18 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_19 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_20 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_21 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_22 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_23 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_24 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_25 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_26 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_27 {
-  font-size: 6px;
-  background: url("../img/"); }
-
-.island_des_nr_28 {
-  font-size: 6px;
-  background: url("../img/"); }
-
 .intro_con .introBg {
   width: 100%;
   height: 763px;
@@ -3096,11 +3025,11 @@ footer {
 
 .intro_detail {
   position: absolute;
-  right: 70px;
+  right: 90px;
   top: 50px;
-  width: 350px;
+  width: 450px;
   height: 600px;
-  padding: 0px 40px 0;
+  padding: 0px 60px 0;
   z-index: 1000;
   vertical-align: middle;
   font-family: 'Alegreya Sans', sans-serif; }
@@ -3127,7 +3056,8 @@ footer {
         float: left;
         width: 300px;
         margin-top: 70px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        color: #666666; }
 
 .intro_detail_buttons img {
   display: block;
@@ -3146,8 +3076,26 @@ footer {
 .intro_nav {
   position: absolute;
   top: 0;
-  right: 40px;
+  right: 70px;
   width: 40px; }
+
+.intro_buttom {
+  position: absolute;
+  height: 60px;
+  bottom: 180px;
+  right: 265px;
+  z-index: 9999; }
+  .intro_buttom a {
+    margin: 0 25px 0 125px;
+    padding: 20px 10px;
+    color: #000;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 5px; }
+  .intro_buttom.to_islands {
+    bottom: 280px; }
 
 .highcharts-legend-box {
   visibility: hidden; }
@@ -3194,27 +3142,32 @@ footer {
       width: 900px;
       top: 230px;
       left: 50px; }
+  .insel_detail_con .intro_detail {
+    top: 15px;
+    padding: 0 30px; }
   .insel_detail_con .intro_nav {
     top: 90px;
     min-height: 966px; }
   .insel_detail_con .insel_name {
     display: block;
     position: absolute;
-    font-size: 30px;
+    font-size: 35px;
     top: 10px;
-    left: 370px;
-    width: 30%;
+    left: 50px;
+    width: 752px;
+    text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
     color: #000;
     font-weight: 400; }
   .insel_detail_con .regen {
-    top: 70px; }
+    top: 100px; }
 
 .uebersicht {
   display: block;
   position: absolute;
-  right: 0px;
-  width: 430px; }
+  right: 30px;
+  width: 450px; }
   .uebersicht .haushalt {
     width: 320px;
     height: 150px;
@@ -3230,12 +3183,6 @@ footer {
     background-position: center top;
     background-image: url("../img/layout/wassertropfen_frisch.svg");
     background-repeat: no-repeat; }
-  .uebersicht #verbrauch_pro_person, .uebersicht #klaranlage_person {
-    font-family: Arial;
-    color: white;
-    font-size: 16pt;
-    margin-top: 45px;
-    text-align: center; }
   .uebersicht #wassertropfen_verbraucht {
     width: 160px;
     height: 150px;
@@ -3245,6 +3192,12 @@ footer {
     background-position: center top;
     background-image: url("../img/layout/wassertropfen_verschmutzt.svg");
     background-repeat: no-repeat; }
+  .uebersicht #verbrauch_pro_person, .uebersicht #klaranlage_person {
+    font-family: Arial;
+    color: #000;
+    font-size: 16pt;
+    margin-top: 55px;
+    text-align: center; }
   .uebersicht .bezeichnung {
     display: block;
     width: 120px;
@@ -3263,10 +3216,14 @@ footer {
       float: left;
       width: 300px;
       margin-top: 70px;
-      margin-left: 20px; }
+      margin-left: 20px;
+      color: #666666; }
 
-.intro_detail {
-  padding: 0 40px; }
+.infosatz {
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 10px; }
 
 .highcharts-credits {
   display: none; }

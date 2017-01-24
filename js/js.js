@@ -6,6 +6,7 @@ $('#exploreButton').click(function() {
 
 });
 
+
 $('.touchpoint1').click(function() {
   $('.touchpoint').removeClass('active');
   $('.touchpoint1').addClass('active');
@@ -17,6 +18,7 @@ $('.touchpoint2, .divpoint2').click(function() {
   $('.touchpoint2').addClass('active');
   $('.intro_detail').removeClass('display_on').addClass('display_off');
   $('.detail2').removeClass('display_off').addClass('display_on');
+
 });
 $('.touchpoint3, .divpoint3').click(function() {
   $('.touchpoint').removeClass('active');
@@ -96,6 +98,8 @@ $('.intro_nav .touchpoint, .divpoint').click(function() {
   $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
   $('.industrie').removeClass('display_on').addClass('display_off');
   $('.regen').removeClass('display_on').addClass('display_off');
+  $('.skip_intro').removeClass('display_off').addClass('display_on');
+  $('.to_islands').removeClass('display_on').addClass('display_off');
 });
 
 $('.intro_touchpoint1').click(function() {
@@ -143,6 +147,8 @@ $('.intro_touchpoint13, .divpoint13').click(function() {
 });
 $('.intro_touchpoint14, .divpoint14').click(function() {
   $('.introBg img').attr('src','img/zwei_inseln_intro.svg');
+  $('.skip_intro').removeClass('display_on').addClass('display_off');
+  $('.to_islands').removeClass('display_off').addClass('display_on');
 });
 
 
@@ -358,8 +364,8 @@ function initIslands(){
 
     $('.island_' + item[1]).css('background', 'url(./img/laender/'+ item[11] +'.svg)');
     $('.island_' + item[1]).css('background-repeat', 'no-repeat');
-    $('.island_' + item[1]).css('top', Math.floor(Math.random() * 400) + 130  +'px');
-    $('.island_' + item[1]).css('left', Math.floor(Math.random() * 650) + 500 +'px');
+    $('.island_' + item[1]).css('top', Math.floor(Math.random() * 360) + 80  +'px');
+    $('.island_' + item[1]).css('left', Math.floor(Math.random() * 800) + 500 +'px');
     $('.island_' + item[1]).css('z-index', Math.floor(Math.random() * 700)* (-1) +'px');
     $('.island_' + item[1]).css('-webkit-animation-name', 'none');
     $('.island_' + item[1]).css('-webkit-animation-name', 'sizeChange'+ item[1]);
