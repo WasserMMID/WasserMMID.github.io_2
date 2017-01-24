@@ -358,7 +358,7 @@ function initIslands(){
 
     var floatIsland = document.createElement( 'a' );
     floatIsland.className = 'island island_'+item[1];
-    floatIsland.href= 'laender/' + item[0] + '.html';
+    floatIsland.href= 'laender/' + item[11] + '.html';
 
     $('.islands').append(floatIsland);
 
