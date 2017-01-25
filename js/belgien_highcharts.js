@@ -450,7 +450,7 @@ $(function () {
         },
 
         title: {
-            text: 'Verbrauch',
+            text: 'Verbrauch pro Einwohner',
             style: {
                 fontSize: '16px'
             }
@@ -554,7 +554,7 @@ $(function () {
 
         chart: {
             type: 'solidgauge',
-            marginTop: 60,
+            marginTop: 50,
             animation: true
         },
 
@@ -577,13 +577,13 @@ $(function () {
             backgroundColor: 'none',
             shadow: false,
             style: {
-                fontSize: '16px'
+                fontSize: '12px'
             },
-            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            pointFormat: '{series.name}<br><span style="font-size:1.5em; color: {point.color}; font-weight: bold">{point.y}</span>',
             positioner: function (labelWidth) {
                 return {
                     x: 225 - labelWidth / 2,
-                    y: 180
+                    y: 140
                 };
             }
         },
@@ -592,18 +592,18 @@ $(function () {
             startAngle: 0,
             endAngle: 360,
             background: [{ // Track for Move
-                outerRadius: '112%',
-                innerRadius: '88%',
+                outerRadius: '82%',
+                innerRadius: '67%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Exercise
-                outerRadius: '87%',
-                innerRadius: '63%',
+                outerRadius: '66%',
+                innerRadius: '51%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Stand
-                outerRadius: '62%',
-                innerRadius: '38%',
+                outerRadius: '50%',
+                innerRadius: '35%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
                 borderWidth: 0
             }]
@@ -611,14 +611,14 @@ $(function () {
 
         yAxis: {
             min: 0,
-            max: 150,
+            max: 369,
             lineWidth: 0,
             tickPositions: []
         },
 
         plotOptions: {
             solidgauge: {
-                borderWidth: '34px',
+                borderWidth: '15px',
                 dataLabels: {
                     enabled: false
                 },
@@ -632,8 +632,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[0],
             data: [{
                 color: Highcharts.getOptions().colors[0],
-                radius: '100%',
-                innerRadius: '100%',
+                radius: '75%',
+                innerRadius: '75%',
                 y: 145.2
             }]
         }, {
@@ -641,8 +641,9 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
-                radius: '75%',
-                innerRadius: '75%',
+                color: Highcharts.getOptions().colors[1],
+                radius: '60%',
+                innerRadius: '60%',
                 y: verbrauch_Landwirtschaft
             }]
         }, {
@@ -650,8 +651,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[2],
             data: [{
                 color: Highcharts.getOptions().colors[2],
-                radius: '50%',
-                innerRadius: '50%',
+                radius: '45%',
+                innerRadius: '45%',
                 y: 0
             }]
         }]
@@ -663,7 +664,7 @@ $(function () {
 
         chart: {
             type: 'solidgauge',
-            marginTop: 60,
+            marginTop: 50,
             animation: true
         },
 
@@ -686,13 +687,13 @@ $(function () {
             backgroundColor: 'none',
             shadow: false,
             style: {
-                fontSize: '16px'
+                fontSize: '12px'
             },
-            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            pointFormat: '{series.name}<br><span style="font-size:1.5em; color: {point.color}; font-weight: bold">{point.y}</span>',
             positioner: function (labelWidth) {
                 return {
                     x: 225 - labelWidth / 2,
-                    y: 180
+                    y: 140
                 };
             }
         },
@@ -701,18 +702,18 @@ $(function () {
             startAngle: 0,
             endAngle: 360,
             background: [{ // Track for Move
-                outerRadius: '112%',
-                innerRadius: '88%',
+                outerRadius: '82%',
+                innerRadius: '67%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Exercise
-                outerRadius: '87%',
-                innerRadius: '63%',
+                outerRadius: '66%',
+                innerRadius: '51%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Stand
-                outerRadius: '62%',
-                innerRadius: '38%',
+                outerRadius: '50%',
+                innerRadius: '35%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
                 borderWidth: 0
             }]
@@ -720,14 +721,14 @@ $(function () {
 
         yAxis: {
             min: 0,
-            max: 375,
+            max: 369,
             lineWidth: 0,
             tickPositions: []
         },
 
         plotOptions: {
             solidgauge: {
-                borderWidth: '34px',
+                borderWidth: '15px',
                 dataLabels: {
                     enabled: false
                 },
@@ -741,8 +742,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[0],
             data: [{
                 color: Highcharts.getOptions().colors[0],
-                radius: '100%',
-                innerRadius: '100%',
+                radius: '75%',
+                innerRadius: '75%',
                 y: 361.9
             }]
         }, {
@@ -750,8 +751,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
-                radius: '75%',
-                innerRadius: '75%',
+                radius: '60%',
+                innerRadius: '60%',
                 y: verbrauch_Industrie
             }]
         }, {
@@ -759,8 +760,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[2],
             data: [{
                 color: Highcharts.getOptions().colors[2],
-                radius: '50%',
-                innerRadius: '50%',
+                radius: '45%',
+                innerRadius: '45%',
                 y: 2.1
             }]
         }]
@@ -771,7 +772,7 @@ $(function () {
 
         chart: {
             type: 'solidgauge',
-            marginTop: 60,
+            marginTop: 50,
             animation: true
         },
 
@@ -794,13 +795,13 @@ $(function () {
             backgroundColor: 'none',
             shadow: false,
             style: {
-                fontSize: '16px'
+                fontSize: '12px'
             },
-            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            pointFormat: '{series.name}<br><span style="font-size:1.5em; color: {point.color}; font-weight: bold">{point.y}</span>',
             positioner: function (labelWidth) {
                 return {
                     x: 225 - labelWidth / 2,
-                    y: 180
+                    y: 140
                 };
             }
         },
@@ -809,18 +810,18 @@ $(function () {
             startAngle: 0,
             endAngle: 360,
             background: [{ // Track for Move
-                outerRadius: '112%',
-                innerRadius: '88%',
+                outerRadius: '82%',
+                innerRadius: '67%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Exercise
-                outerRadius: '87%',
-                innerRadius: '63%',
+                outerRadius: '66%',
+                innerRadius: '51%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Stand
-                outerRadius: '62%',
-                innerRadius: '38%',
+                outerRadius: '50%',
+                innerRadius: '35%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
                 borderWidth: 0
             }]
@@ -828,14 +829,14 @@ $(function () {
 
         yAxis: {
             min: 0,
-            max: 7100,
+            max: 31000,
             lineWidth: 0,
             tickPositions: []
         },
 
         plotOptions: {
             solidgauge: {
-                borderWidth: '34px',
+                borderWidth: '15px',
                 dataLabels: {
                     enabled: false
                 },
@@ -849,8 +850,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[0],
             data: [{
                 color: Highcharts.getOptions().colors[0],
-                radius: '100%',
-                innerRadius: '100%',
+                radius: '75%',
+                innerRadius: '75%',
                 y: 6884
             }]
         }, {
@@ -858,8 +859,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
-                radius: '75%',
-                innerRadius: '75%',
+                radius: '60%',
+                innerRadius: '60%',
                 y: grundwasserentnahme
             }]
         }, {
@@ -867,8 +868,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[2],
             data: [{
                 color: Highcharts.getOptions().colors[2],
-                radius: '50%',
-                innerRadius: '50%',
+                radius: '45%',
+                innerRadius: '45%',
                 y: 25
             }]
         }]
@@ -878,7 +879,7 @@ $(function () {
 
         chart: {
             type: 'solidgauge',
-            marginTop: 60,
+            marginTop: 50,
             animation: true
         },
 
@@ -901,13 +902,13 @@ $(function () {
             backgroundColor: 'none',
             shadow: false,
             style: {
-                fontSize: '16px'
+                fontSize: '12px'
             },
-            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+            pointFormat: '{series.name}<br><span style="font-size:1.5em; color: {point.color}; font-weight: bold">{point.y}</span>',
             positioner: function (labelWidth) {
                 return {
                     x: 225 - labelWidth / 2,
-                    y: 180
+                    y: 140
                 };
             }
         },
@@ -916,18 +917,18 @@ $(function () {
             startAngle: 0,
             endAngle: 360,
             background: [{ // Track for Move
-                outerRadius: '112%',
-                innerRadius: '88%',
+                outerRadius: '82%',
+                innerRadius: '67%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Exercise
-                outerRadius: '87%',
-                innerRadius: '63%',
+                outerRadius: '66%',
+                innerRadius: '51%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.2).get(),
                 borderWidth: 0
             }, { // Track for Stand
-                outerRadius: '62%',
-                innerRadius: '38%',
+                outerRadius: '50%',
+                innerRadius: '35%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.2).get(),
                 borderWidth: 0
             }]
@@ -935,14 +936,14 @@ $(function () {
 
         yAxis: {
             min: 0,
-            max: 31700,
+            max: 31000,
             lineWidth: 0,
             tickPositions: []
         },
 
         plotOptions: {
             solidgauge: {
-                borderWidth: '34px',
+                borderWidth: '15px',
                 dataLabels: {
                     enabled: false
                 },
@@ -956,8 +957,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[0],
             data: [{
                 color: Highcharts.getOptions().colors[0],
-                radius: '100%',
-                innerRadius: '100%',
+                radius: '75%',
+                innerRadius: '75%',
                 y: 30465
             }]
         }, {
@@ -965,8 +966,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
-                radius: '75%',
-                innerRadius: '75%',
+                radius: '60%',
+                innerRadius: '60%',
                 y: oberflaechenwasserentnahme
             }]
         }, {
@@ -974,8 +975,8 @@ $(function () {
             borderColor: Highcharts.getOptions().colors[2],
             data: [{
                 color: Highcharts.getOptions().colors[2],
-                radius: '50%',
-                innerRadius: '50%',
+                radius: '45%',
+                innerRadius: '45%',
                 y: 0
             }]
         }]
