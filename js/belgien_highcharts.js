@@ -1,5 +1,5 @@
 $(function () {
-    var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
+    var item=["Vereinigtes Königreich",1,2,3,4,null,null,null,null];
 
     var landername = item[0];
     var suesswasserressourcen = item[1];
@@ -11,49 +11,48 @@ $(function () {
     var klaeranlagen = item[7];
     var abfluss = item[8];
 
+    $('.diagramm_no').hide();
+    $('.diagramm_no_s_1').hide();
+    $('.diagramm_no_s_2').hide();
+    $('.drop_no_1').hide();
+    $('.drop_no_2').hide();
+
+
     if (suesswasserressourcen ==null) {
-      $('.uebersicht_resourcen').hide();
-      $('.suesswasser').hide();
-      $('.touchpoint2').hide();
+      $('#suesswasser + .diagramm_no').show();
+
     }
 
     if (grundwasserentnahme ==null) {
-      $('.entnahme_1').hide();
+      $('#entnahme_1 + .diagramm_no_s_1').show();
     }
 
     if (oberflaechenwasserentnahme ==null) {
-      $('.entnahme_2').hide();
-    }
-
-    if ((grundwasserentnahme ==null)&& (oberflaechenwasserentnahme ==null)) {
-      $('.touchpoint5').hide();
+      $('#entnahme_2 + .diagramm_no_s_2').show();
     }
 
     if (verbrauch_PrivateHaushalte ==null) {
-      $('.wassertropfen_frisch').hide();
-      $('.verbrauch').hide();
-      $('.touchpoint3').hide();
+      $('#verbrauch + .diagramm_no').show();
+      $('#verbrauch_pro_person + .drop_no_1').show();
     }
 
     if (verbrauch_Landwirtschaft ==null) {
-      $('.wirtschaft_1').hide();
+      $('#wirtschaft_1 + .diagramm_no_s_1').show();
     }
+
     if (verbrauch_Industrie ==null) {
-      $('.wirtschaft_2').hide();
-    }
-    if ((verbrauch_Landwirtschaft ==null)&& (verbrauch_Industrie ==null)) {
-      $('.touchpoint4').hide();
+      $('#wirtschaft_2 + .diagramm_no_s_2').show();
     }
 
     if (abfluss ==null) {
-      $('.abfluss').hide();
-      $('.touchpoint7').hide();
+      $('#abfluss + .diagramm_no').show();
+
     }
 
     if (klaeranlagen == null) {
-      $('#wassertropfen_verbraucht').hide();
-      $('.klare').hide();
-      $('.touchpoint6').hide();
+      $('#klare + .diagramm_no').show();
+      $('#klaranlage_person + .drop_no_2').show();
+
     }
 
     if (!Highcharts.theme) {

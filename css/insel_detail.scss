@@ -151,26 +151,7 @@
     margin-top: 45px;
   }
 
-	.einleitung {
-		width: 330px;
-		margin: 0 auto;
 
-		img {
-			display: block;
-			float: left;
-			margin-top: 67px;
-			width: 30px;
-
-			& + p {
-				display: block;
-				float: left;
-				width: 280px;
-				margin-top: 70px;
-				margin-left: 20px;
-				color: #666666;
-			}
-		}
-	}
 }
 
 .infosatz {
@@ -189,4 +170,81 @@
 	float: left;
 	bottom: 0;
 	z-index: 400;
+}
+
+
+.diagramm_no {
+	display: block;
+	width: 410px;
+	height: 325px;
+	position: absolute;
+	top: 55px;
+	right: 8px;
+	margin: 0;
+	padding: 0;
+	background:url('../img/layout/no_d.png');
+	background-size: 326px auto;
+	background-repeat: no-repeat;
+}
+
+.diagramm_no_s_1, .diagramm_no_s_2 {
+	display: block;
+	width: 185px;
+	height: 170px;
+	position: absolute;
+	background:url('../img/layout/no_d_s.png');
+	background-size: 183px auto;
+	background-repeat: no-repeat;
+}
+
+.diagramm_no_s_1 {
+	top: 81px;
+	right: 160px;
+}
+
+.diagramm_no_s_2 {
+	top: 371px;
+	right: 160px;
+}
+
+.drop_no_1, .drop_no_2 {
+	display: block;
+	width: 110px;
+	height: 115px;
+	position: absolute;
+	background:url('../img/layout/no_d_d.png');
+	background-size: 106px auto;
+	background-repeat: no-repeat;
+	top: 255px;
+
+}
+
+.drop_no_1 {
+	right: 245px;
+}
+
+.drop_no_2 {
+	right: 86px;
+}
+
+.infosatz {
+	width: 330px;
+	margin: 0 auto;
+
+	img {
+		display: block;
+		float: left;
+		margin-top: 67px;
+		width: 30px;
+
+		& + p {
+			display: block;
+			float: left;
+			width: 280px;
+			margin-top: 70px;
+			margin-left: 20px;
+			color: #666666;
+			text-align: left;
+		}
+	}
 }
