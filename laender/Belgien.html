@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular.min.js"></script>
     <script src="../js/jquery.js"></script>
   </head>
   <body>
@@ -23,14 +24,18 @@
         <ul>
           <li class=""><a href="../intro.html">Intro</a></li>
           <li class="ressourcen"><a href="../islands.html">Übersicht</a></li>
-          <!-- <li class="ressourcen">Entdecken</li> -->
         </ul>
+      </div>
+      <div class="laender_select">
+        <div ng-app="app" ng-controller="mainCtrl">
+          <dropdown-list id="select_country" data-items-list="itemsList" data-placeholder="Andere Lander suchen"></dropdown-list>
+        </div>
+        <div class="search_icon">
+          <img src="../img/layout/search.png" alt="">
+        </div>
       </div>
     </div>
     <div class="container insel_detail_con">
-      <!-- <a class="return_button" href="../islands.html">
-        <img src="../img/layout/icon-zurueck.svg" alt="">
-      </a> -->
       <div class="introBg">
         <img src="../img/insel.svg" alt="">
       </div>
@@ -204,6 +209,7 @@
     <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
     <script src="../js/belgien_highcharts.js"></script>
     <script src="../js/js.js"></script>
+    <script src="../js/select.js"></script>
 
 
 

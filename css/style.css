@@ -73,12 +73,14 @@
     padding: 65px 0 0; }
     .islands_nav ul li {
       height: 20px; }
+    .islands_nav ul .klaerung {
+      margin-right: 60px; }
     .islands_nav ul li, .islands_nav ul a {
       display: block;
       float: left;
       text-align: center;
       margin: 0 10px;
-      padding: 5px 0 8px;
+      padding: 10px 0 3px;
       color: #000;
       text-decoration: none;
       cursor: pointer; }
@@ -91,6 +93,14 @@
       padding: 0;
       height: 10px;
       font-family: 'Alegreya Sans', sans-serif; }
+    .islands_nav ul .nav_intro, .islands_nav ul .nav_ueber {
+      padding: 10px 10px 3px 10px; }
+      .islands_nav ul .nav_intro.active, .islands_nav ul .nav_ueber.active {
+        padding: 10px 10px 3px 10px;
+        background: #000;
+        border-bottom: 3px solid #000; }
+        .islands_nav ul .nav_intro.active li, .islands_nav ul .nav_intro.active a, .islands_nav ul .nav_ueber.active li, .islands_nav ul .nav_ueber.active a {
+          color: #fff; }
 
 .islands {
   display: block;
@@ -145,17 +155,17 @@
 
 @keyframes positionChange1 {
   0% {
-    top: 35px;
-    left: 9px;
-    z-index: 112; }
+    top: 34px;
+    left: 977px;
+    z-index: 213; }
   100% {
     top: 67.2%;
     left: 3.5%; } }
 @-webkit-keyframes positionChange1 {
   0% {
-    top: 67px;
-    left: 359px;
-    z-index: 125; }
+    top: 469px;
+    left: 726px;
+    z-index: 111; }
   100% {
     top: 67.2%;
     left: 3.5%; } }
@@ -198,17 +208,17 @@
 
 @keyframes positionChange2 {
   0% {
-    top: 273px;
-    left: 376px;
-    z-index: 34; }
+    top: 151px;
+    left: 398px;
+    z-index: 262; }
   100% {
     top: 64.8%;
     left: 12.40559%; } }
 @-webkit-keyframes positionChange2 {
   0% {
-    top: 500px;
-    left: 799px;
-    z-index: 230; }
+    top: 444px;
+    left: 661px;
+    z-index: 228; }
   100% {
     top: 64.8%;
     left: 12.40559%; } }
@@ -251,17 +261,17 @@
 
 @keyframes positionChange3 {
   0% {
-    top: 284px;
-    left: 74px;
-    z-index: 212; }
+    top: 485px;
+    left: 506px;
+    z-index: 203; }
   100% {
     top: 62.4%;
     left: 19.23909%; } }
 @-webkit-keyframes positionChange3 {
   0% {
-    top: 219px;
-    left: 346px;
-    z-index: 123; }
+    top: 46px;
+    left: 644px;
+    z-index: 78; }
   100% {
     top: 62.4%;
     left: 19.23909%; } }
@@ -304,17 +314,17 @@
 
 @keyframes positionChange4 {
   0% {
-    top: 62px;
-    left: 768px;
-    z-index: 97; }
+    top: 352px;
+    left: 865px;
+    z-index: 291; }
   100% {
     top: 60%;
     left: 25%; } }
 @-webkit-keyframes positionChange4 {
   0% {
-    top: 394px;
-    left: 298px;
-    z-index: 11; }
+    top: 267px;
+    left: 417px;
+    z-index: 129; }
   100% {
     top: 60%;
     left: 25%; } }
@@ -357,17 +367,17 @@
 
 @keyframes positionChange5 {
   0% {
-    top: 130px;
-    left: 131px;
-    z-index: 205; }
+    top: 216px;
+    left: 935px;
+    z-index: 101; }
   100% {
     top: 57.6%;
     left: 30.07546%; } }
 @-webkit-keyframes positionChange5 {
   0% {
-    top: 161px;
-    left: 42px;
-    z-index: 179; }
+    top: 171px;
+    left: 1px;
+    z-index: 238; }
   100% {
     top: 57.6%;
     left: 30.07546%; } }
@@ -410,17 +420,17 @@
 
 @keyframes positionChange6 {
   0% {
-    top: 300px;
-    left: 652px;
-    z-index: 293; }
+    top: 203px;
+    left: 726px;
+    z-index: 177; }
   100% {
     top: 55.2%;
     left: 34.66403%; } }
 @-webkit-keyframes positionChange6 {
   0% {
-    top: 54px;
-    left: 982px;
-    z-index: 213; }
+    top: 173px;
+    left: 820px;
+    z-index: 221; }
   100% {
     top: 55.2%;
     left: 34.66403%; } }
@@ -463,17 +473,17 @@
 
 @keyframes positionChange7 {
   0% {
-    top: 462px;
-    left: 81px;
-    z-index: 113; }
+    top: 254px;
+    left: 6px;
+    z-index: 80; }
   100% {
     top: 52.8%;
     left: 38.88365%; } }
 @-webkit-keyframes positionChange7 {
   0% {
-    top: 14px;
-    left: 638px;
-    z-index: 238; }
+    top: 23px;
+    left: 803px;
+    z-index: 243; }
   100% {
     top: 52.8%;
     left: 38.88365%; } }
@@ -516,17 +526,17 @@
 
 @keyframes positionChange8 {
   0% {
-    top: 427px;
-    left: 994px;
-    z-index: 107; }
+    top: 83px;
+    left: 484px;
+    z-index: 178; }
   100% {
     top: 50.4%;
     left: 42.81118%; } }
 @-webkit-keyframes positionChange8 {
   0% {
-    top: 9px;
-    left: 398px;
-    z-index: 259; }
+    top: 378px;
+    left: 365px;
+    z-index: 125; }
   100% {
     top: 50.4%;
     left: 42.81118%; } }
@@ -569,17 +579,17 @@
 
 @keyframes positionChange9 {
   0% {
-    top: 229px;
-    left: 23px;
-    z-index: 207; }
+    top: 430px;
+    left: 137px;
+    z-index: 120; }
   100% {
     top: 48%;
     left: 46.5%; } }
 @-webkit-keyframes positionChange9 {
   0% {
-    top: 497px;
-    left: 418px;
-    z-index: 190; }
+    top: 74px;
+    left: 97px;
+    z-index: 60; }
   100% {
     top: 48%;
     left: 46.5%; } }
@@ -622,17 +632,17 @@
 
 @keyframes positionChange10 {
   0% {
-    top: 139px;
-    left: 628px;
-    z-index: 202; }
+    top: 129px;
+    left: 140px;
+    z-index: 56; }
   100% {
     top: 45.6%;
     left: 49.98897%; } }
 @-webkit-keyframes positionChange10 {
   0% {
-    top: 251px;
-    left: 609px;
-    z-index: 152; }
+    top: 308px;
+    left: 654px;
+    z-index: 77; }
   100% {
     top: 45.6%;
     left: 49.98897%; } }
@@ -675,17 +685,17 @@
 
 @keyframes positionChange11 {
   0% {
-    top: 158px;
-    left: 262px;
-    z-index: 285; }
+    top: 186px;
+    left: 464px;
+    z-index: 111; }
   100% {
     top: 43.2%;
     left: 53.30743%; } }
 @-webkit-keyframes positionChange11 {
   0% {
-    top: 21px;
-    left: 934px;
-    z-index: 81; }
+    top: 108px;
+    left: 588px;
+    z-index: 139; }
   100% {
     top: 43.2%;
     left: 53.30743%; } }
@@ -728,17 +738,17 @@
 
 @keyframes positionChange12 {
   0% {
-    top: 437px;
-    left: 938px;
-    z-index: 263; }
+    top: 294px;
+    left: 488px;
+    z-index: 136; }
   100% {
     top: 40.8%;
     left: 56.47818%; } }
 @-webkit-keyframes positionChange12 {
   0% {
-    top: 66px;
-    left: 423px;
-    z-index: 61; }
+    top: 316px;
+    left: 739px;
+    z-index: 284; }
   100% {
     top: 40.8%;
     left: 56.47818%; } }
@@ -781,17 +791,17 @@
 
 @keyframes positionChange13 {
   0% {
-    top: 4px;
-    left: 228px;
-    z-index: 230; }
+    top: 277px;
+    left: 941px;
+    z-index: 63; }
   100% {
     top: 38.4%;
     left: 59.51935%; } }
 @-webkit-keyframes positionChange13 {
   0% {
-    top: 288px;
-    left: 422px;
-    z-index: 93; }
+    top: 122px;
+    left: 631px;
+    z-index: 6; }
   100% {
     top: 38.4%;
     left: 59.51935%; } }
@@ -834,17 +844,17 @@
 
 @keyframes positionChange14 {
   0% {
-    top: 11px;
-    left: 30px;
-    z-index: 254; }
+    top: 270px;
+    left: 339px;
+    z-index: 297; }
   100% {
     top: 36.0%;
     left: 62.44563%; } }
 @-webkit-keyframes positionChange14 {
   0% {
-    top: 25px;
-    left: 551px;
-    z-index: 154; }
+    top: 267px;
+    left: 161px;
+    z-index: 202; }
   100% {
     top: 36.0%;
     left: 62.44563%; } }
@@ -887,17 +897,17 @@
 
 @keyframes positionChange15 {
   0% {
-    top: 180px;
-    left: 212px;
-    z-index: 232; }
+    top: 446px;
+    left: 139px;
+    z-index: 214; }
   100% {
     top: 33.6%;
     left: 65.26914%; } }
 @-webkit-keyframes positionChange15 {
   0% {
-    top: 90px;
-    left: 379px;
-    z-index: 250; }
+    top: 168px;
+    left: 705px;
+    z-index: 239; }
   100% {
     top: 33.6%;
     left: 65.26914%; } }
@@ -940,17 +950,17 @@
 
 @keyframes positionChange16 {
   0% {
-    top: 433px;
-    left: 442px;
-    z-index: 99; }
+    top: 490px;
+    left: 813px;
+    z-index: 69; }
   100% {
     top: 31.2%;
     left: 68%; } }
 @-webkit-keyframes positionChange16 {
   0% {
-    top: 110px;
-    left: 697px;
-    z-index: 25; }
+    top: 390px;
+    left: 678px;
+    z-index: 33; }
   100% {
     top: 31.2%;
     left: 68%; } }
@@ -993,17 +1003,17 @@
 
 @keyframes positionChange17 {
   0% {
-    top: 284px;
-    left: 85px;
-    z-index: 171; }
+    top: 464px;
+    left: 278px;
+    z-index: 218; }
   100% {
     top: 28.8%;
     left: 70.64677%; } }
 @-webkit-keyframes positionChange17 {
   0% {
-    top: 439px;
-    left: 843px;
-    z-index: 237; }
+    top: 303px;
+    left: 694px;
+    z-index: 266; }
   100% {
     top: 28.8%;
     left: 70.64677%; } }
@@ -1046,17 +1056,17 @@
 
 @keyframes positionChange18 {
   0% {
-    top: 326px;
-    left: 738px;
-    z-index: 193; }
+    top: 320px;
+    left: 553px;
+    z-index: 244; }
   100% {
     top: 26.4%;
     left: 73.21677%; } }
 @-webkit-keyframes positionChange18 {
   0% {
-    top: 481px;
-    left: 236px;
-    z-index: 156; }
+    top: 285px;
+    left: 368px;
+    z-index: 178; }
   100% {
     top: 26.4%;
     left: 73.21677%; } }
@@ -1099,17 +1109,17 @@
 
 @keyframes positionChange19 {
   0% {
-    top: 253px;
-    left: 120px;
-    z-index: 194; }
+    top: 80px;
+    left: 720px;
+    z-index: 151; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
 @-webkit-keyframes positionChange19 {
   0% {
-    top: 339px;
-    left: 120px;
-    z-index: 207; }
+    top: 43px;
+    left: 491px;
+    z-index: 185; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
@@ -1156,17 +1166,17 @@
 
 @keyframes positionChange19 {
   0% {
-    top: 5px;
-    left: 833px;
-    z-index: 100; }
+    top: 84px;
+    left: 566px;
+    z-index: 79; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
 @-webkit-keyframes positionChange19 {
   0% {
-    top: 56px;
-    left: 992px;
-    z-index: 73; }
+    top: 233px;
+    left: 631px;
+    z-index: 280; }
   100% {
     top: 24.0%;
     left: 75.71633%; } }
@@ -1213,17 +1223,17 @@
 
 @keyframes positionChange20 {
   0% {
-    top: 667px;
-    left: 993px;
-    z-index: 146; }
+    top: 167px;
+    left: 342px;
+    z-index: 286; }
   100% {
     top: 21.6%;
     left: 78.15092%; } }
 @-webkit-keyframes positionChange20 {
   0% {
-    top: 363px;
-    left: 26px;
-    z-index: 5; }
+    top: 783px;
+    left: 407px;
+    z-index: 258; }
   100% {
     top: 21.6%;
     left: 78.15092%; } }
@@ -1270,17 +1280,17 @@
 
 @keyframes positionChange21 {
   0% {
-    top: 43px;
-    left: 575px;
-    z-index: 237; }
+    top: 727px;
+    left: 808px;
+    z-index: 66; }
   100% {
     top: 19.2%;
     left: 80.52538%; } }
 @-webkit-keyframes positionChange21 {
   0% {
-    top: 226px;
-    left: 255px;
-    z-index: 86; }
+    top: 450px;
+    left: 941px;
+    z-index: 177; }
   100% {
     top: 19.2%;
     left: 80.52538%; } }
@@ -1327,17 +1337,17 @@
 
 @keyframes positionChange22 {
   0% {
-    top: 44px;
-    left: 687px;
-    z-index: 15; }
+    top: 469px;
+    left: 564px;
+    z-index: 49; }
   100% {
     top: 16.8%;
     left: 82.84394%; } }
 @-webkit-keyframes positionChange22 {
   0% {
-    top: 377px;
-    left: 843px;
-    z-index: 46; }
+    top: 729px;
+    left: 289px;
+    z-index: 189; }
   100% {
     top: 16.8%;
     left: 82.84394%; } }
@@ -1384,17 +1394,17 @@
 
 @keyframes positionChange23 {
   0% {
-    top: 583px;
-    left: 141px;
-    z-index: 201; }
+    top: 784px;
+    left: 693px;
+    z-index: 53; }
   100% {
     top: 14.4%;
     left: 85.11038%; } }
 @-webkit-keyframes positionChange23 {
   0% {
-    top: 16px;
-    left: 875px;
-    z-index: 267; }
+    top: 491px;
+    left: 931px;
+    z-index: 78; }
   100% {
     top: 14.4%;
     left: 85.11038%; } }
@@ -1441,17 +1451,17 @@
 
 @keyframes positionChange24 {
   0% {
-    top: 583px;
-    left: 561px;
-    z-index: 285; }
+    top: 318px;
+    left: 262px;
+    z-index: 62; }
   100% {
     top: 12.0%;
     left: 87.32806%; } }
 @-webkit-keyframes positionChange24 {
   0% {
-    top: 422px;
-    left: 565px;
-    z-index: 264; }
+    top: 505px;
+    left: 246px;
+    z-index: 184; }
   100% {
     top: 12.0%;
     left: 87.32806%; } }
@@ -1498,17 +1508,17 @@
 
 @keyframes positionChange25 {
   0% {
-    top: 574px;
-    left: 513px;
-    z-index: 213; }
+    top: 220px;
+    left: 214px;
+    z-index: 78; }
   100% {
     top: 9.6%;
     left: 89.5%; } }
 @-webkit-keyframes positionChange25 {
   0% {
-    top: 152px;
-    left: 759px;
-    z-index: 300; }
+    top: 648px;
+    left: 348px;
+    z-index: 217; }
   100% {
     top: 9.6%;
     left: 89.5%; } }
@@ -1555,17 +1565,17 @@
 
 @keyframes positionChange26 {
   0% {
-    top: 720px;
-    left: 369px;
-    z-index: 242; }
+    top: 148px;
+    left: 991px;
+    z-index: 82; }
   100% {
     top: 7.2%;
     left: 91.62892%; } }
 @-webkit-keyframes positionChange26 {
   0% {
-    top: 754px;
-    left: 555px;
-    z-index: 235; }
+    top: 456px;
+    left: 167px;
+    z-index: 191; }
   100% {
     top: 7.2%;
     left: 91.62892%; } }
@@ -1612,17 +1622,17 @@
 
 @keyframes positionChange27 {
   0% {
-    top: 384px;
-    left: 466px;
-    z-index: 98; }
+    top: 221px;
+    left: 440px;
+    z-index: 262; }
   100% {
     top: 4.8%;
     left: 93.71728%; } }
 @-webkit-keyframes positionChange27 {
   0% {
-    top: 180px;
-    left: 592px;
-    z-index: 269; }
+    top: 760px;
+    left: 675px;
+    z-index: 24; }
   100% {
     top: 4.8%;
     left: 93.71728%; } }
@@ -1669,17 +1679,17 @@
 
 @keyframes positionChange28 {
   0% {
-    top: 555px;
-    left: 227px;
-    z-index: 8; }
+    top: 585px;
+    left: 452px;
+    z-index: 178; }
   100% {
     top: 2.4%;
     left: 95.76731%; } }
 @-webkit-keyframes positionChange28 {
   0% {
-    top: 78px;
-    left: 983px;
-    z-index: 229; }
+    top: 423px;
+    left: 481px;
+    z-index: 159; }
   100% {
     top: 2.4%;
     left: 95.76731%; } }
@@ -3138,7 +3148,7 @@ footer {
     padding: 0 30px; }
   .insel_detail_con .intro_nav {
     top: 90px;
-    min-height: 966px; }
+    min-height: 946px; }
   .insel_detail_con .insel_name {
     display: block;
     position: absolute;
@@ -3279,6 +3289,46 @@ footer {
       margin-left: 20px;
       color: #666666;
       text-align: left; }
+
+.laender_select {
+  display: block;
+  position: absolute;
+  right: 230px;
+  top: 60px;
+  z-index: 99999; }
+  .laender_select .search_icon {
+    position: relative;
+    left: 220px;
+    top: -30px;
+    width: 20px;
+    height: 20px; }
+    .laender_select .search_icon img {
+      height: 20px; }
+  .laender_select input {
+    padding: 2px 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 30px;
+    width: 230px; }
+  .laender_select .list {
+    list-style-type: none;
+    margin: 0;
+    opacity: 0;
+    padding: 4px 7px;
+    position: absolute;
+    margin-left: -1000px;
+    background: white;
+    box-shadow: 1px 1px 6px #c3c3c3;
+    border-radius: 2px;
+    width: 230px; }
+  .laender_select .list li {
+    padding: 3px 5px;
+    cursor: pointer; }
+  .laender_select .list li:hover {
+    background: lightgray; }
+  .laender_select .show .list {
+    margin-left: 0;
+    opacity: 1; }
 
 .container {
   font-family: 'Alegreya Sans', sans-serif; }

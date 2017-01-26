@@ -89,6 +89,61 @@
   }
 }
 
+//.sub_nav {
+//  display: block;
+//  position: absolute;
+//  float: right;
+//  text-align: right;
+//  //right: 70px;
+//  top: 101px;
+//  width: 100%;
+//  background: #000;
+//
+//  ul {
+//    display: block;
+//    text-align: right;
+//    list-style-type: none;
+//    //width: 100%;
+//
+//    //padding: 35px 0 0;
+//    padding-right: 70px;
+//
+//    li {
+//      height: 20px;
+//      display: block;
+//      float: right;
+//    }
+//
+//    li, a {
+//      display: block;
+//      float: right;
+//      text-align: center;
+//      margin: 0 10px;
+//      padding: 5px 0 8px;
+//      color: #fff;
+//      text-decoration: none;
+//      cursor: pointer;
+//
+//      &:hover {
+//        color: darken(#28B7E0, 20%);
+//      }
+//
+//      &.active a {
+//        //border-bottom: 6px solid #666666;
+//        color: #666666;
+//      }
+//
+//    }
+//
+//    a {
+//      margin: 0;
+//      padding: 0;
+//      height: 15px;
+//      font-family: 'Alegreya Sans', sans-serif;
+//    }
+//  }
+//}
+
 .islands_nav {
   display: block;
   float: right;
@@ -104,12 +159,16 @@
       height: 20px;
     }
 
+    .klaerung {
+      margin-right: 60px;
+    }
+
     li, a {
       display: block;
       float: left;
       text-align: center;
       margin: 0 10px;
-      padding: 5px 0 8px;
+      padding: 10px 0 3px;
       color: #000;
       text-decoration: none;
       cursor: pointer;
@@ -130,8 +189,46 @@
       height: 10px;
       font-family: 'Alegreya Sans', sans-serif;
     }
+
+    .nav_intro, .nav_ueber {
+      padding: 10px 10px 3px 10px;
+
+      &.active {
+        padding: 10px 10px 3px 10px;
+        background: #000;
+        border-bottom: 3px solid #000;
+
+        li, a {
+          color: #fff;
+        }
+      }
+    }
   }
 }
+
+//.sub_nav {
+//  display: block;
+//  position: relative;
+//  left: 70px;
+//  top: -40px;
+//
+//  ul {
+//    li {
+//      display: block;
+//      float: left;
+//      margin: 10px;
+//      padding: 8px 15px;
+//      border: 1px solid #000;
+//      border-radius: 5px;
+//
+//      &:hover {
+//        cursor: pointer;
+//      }
+//
+//    }
+//
+//  }
+//}
 
 .islands {
   display: block;

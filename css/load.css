@@ -27,10 +27,15 @@ body {
     letter-spacing: 0.2px; }
   .siteDes p {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 25px;
     line-height: 37px;
     letter-spacing: 0.3px; }
+  .siteDes p + p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 0px; }
   .siteDes h2 {
     font-size: 20px;
     margin: 15px 0; }
