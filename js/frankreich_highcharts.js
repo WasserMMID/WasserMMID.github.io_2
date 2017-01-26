@@ -1,6 +1,5 @@
 $(function () {
-    var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
-
+    var item=["Frankreich",186.3,5608,24400,62,null,null,55.4,186];
 
     var landername = item[0];
     var suesswasserressourcen = item[1];
@@ -11,6 +10,7 @@ $(function () {
     var verbrauch_Industrie = item[6];
     var klaeranlagen = item[7];
     var abfluss = item[8];
+
 
     $('.diagramm_no').hide();
     $('.diagramm_no_s_1').hide();

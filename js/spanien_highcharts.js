@@ -1,5 +1,5 @@
 $(function () {
-    var item=["Vereinigtes Königreich",172.9,2046,6168,64,null,345,null,171];
+    var item=["Spanien",111.1,6884,30465,76,47.8,361.9,null,111.1];
 
     var landername = item[0];
     var suesswasserressourcen = item[1];
@@ -11,48 +11,48 @@ $(function () {
     var klaeranlagen = item[7];
     var abfluss = item[8];
 
+
     $('.diagramm_no').hide();
     $('.diagramm_no_s_1').hide();
     $('.diagramm_no_s_2').hide();
+    $('.drop_no_1').hide();
+    $('.drop_no_2').hide();
 
 
     if (suesswasserressourcen ==null) {
-      // $('#uebersicht_resourcen').hide();
-      // $('#suesswasser').hide();
+      $('#suesswasser + .diagramm_no').show();
 
     }
 
     if (grundwasserentnahme ==null) {
-      // $('#entnahme_1').hide();
-
+      $('#entnahme_1 + .diagramm_no_s_1').show();
     }
 
     if (oberflaechenwasserentnahme ==null) {
-      // $('#entnahme_2').hide();
+      $('#entnahme_2 + .diagramm_no_s_2').show();
     }
 
     if (verbrauch_PrivateHaushalte ==null) {
-      // $('#wassertropfen_frisch').hide();
-      // $('#verbrauch').hide();
+      $('#verbrauch + .diagramm_no').show();
+      $('#verbrauch_pro_person + .drop_no_1').show();
     }
 
     if (verbrauch_Landwirtschaft ==null) {
-      // $('#wirtschaft_1').hide();
-      $('#wirtschaft_1 + .diagramm_no_s_1').show();
-    }
-    if (verbrauch_Industrie ==null) {
-      // $('#wirtschaft_2').hide();
       $('#wirtschaft_1 + .diagramm_no_s_1').show();
     }
 
+    if (verbrauch_Industrie ==null) {
+      $('#wirtschaft_2 + .diagramm_no_s_2').show();
+    }
 
     if (abfluss ==null) {
-      // $('#abfluss').hide();
+      $('#abfluss + .diagramm_no').show();
+
     }
 
     if (klaeranlagen == null) {
-      // $('#wassertropfen_verbraucht').hide();
       $('#klare + .diagramm_no').show();
+      $('#klaranlage_person + .drop_no_2').show();
 
     }
 
@@ -61,7 +61,7 @@ $(function () {
             chart: {
                 backgroundColor: '#FCFCFC'
             },
-            colors: ['#7393A7', '#80bee5', '#B9D3E4'],
+            colors: ['#5d81ac', '#80bee5', '#b1d4f9'],
             title: {
                 style: {
                     color: 'black'
@@ -80,7 +80,7 @@ $(function () {
 
     //übersicht 4 7
     $('#verbrauch_pro_person').html( verbrauch_PrivateHaushalte +' m&sup3');
-  	$('#klaranlage_person').html( klaeranlagen +' %');
+    $('#klaranlage_person').html( klaeranlagen +' %');
 
     //resource_übersicht 1 8
 

@@ -1,6 +1,5 @@
 $(function () {
-    var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
-
+    var item=["Bulgarien",106.7,558,4919,53,3.1,81,108,1];
 
     var landername = item[0];
     var suesswasserressourcen = item[1];

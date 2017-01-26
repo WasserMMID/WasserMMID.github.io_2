@@ -1,5 +1,5 @@
 $(function () {
-    var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
+    var item = ["Vereinigtes Königreich",172.9,2046,6168,64,120,345,null,171];
 
 
     var landername = item[0];

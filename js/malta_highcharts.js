@@ -1,5 +1,5 @@
 $(function () {
-    var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
+    var item = ["Malta",0.1,45,0,64,0.2,2.1,92.9,0.1];
 
 
     var landername = item[0];
@@ -12,6 +12,7 @@ $(function () {
     var klaeranlagen = item[7];
     var abfluss = item[8];
 
+ 
     $('.diagramm_no').hide();
     $('.diagramm_no_s_1').hide();
     $('.diagramm_no_s_2').hide();

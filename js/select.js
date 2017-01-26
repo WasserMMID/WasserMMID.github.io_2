@@ -9,7 +9,7 @@ angular.module('app', [])
     {'name': 'Polen'},
     {'name': 'Ungarn'},
     {'name': 'Tschechische Republik'},
-    {'name': 'Romaenien'},
+    {'name': 'Rumänien'},
     {'name': 'Slowenien'},
     {'name': 'Bulgarien'},
     {'name': 'Slowakei'},
@@ -73,6 +73,8 @@ $('.search_icon').click(function() {
     country = "Daenemark";
   } else if (country=="Österreich") {
     country = "Oesterreich";
+  } else if (country=="Rumänien") {
+    country = "Rumaenien";
   }
   $(location).attr('href', './'+ country + '.html');
 });

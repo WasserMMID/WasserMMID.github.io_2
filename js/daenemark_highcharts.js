@@ -1,5 +1,5 @@
 $(function () {
-    var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
+    var item=["Daenemark",16.3,644,8,68,null,null,90.1,1.9];
 
 
     var landername = item[0];
@@ -11,6 +11,7 @@ $(function () {
     var verbrauch_Industrie = item[6];
     var klaeranlagen = item[7];
     var abfluss = item[8];
+
 
     $('.diagramm_no').hide();
     $('.diagramm_no_s_1').hide();

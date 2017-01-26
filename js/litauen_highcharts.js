@@ -1,5 +1,5 @@
 $(function () {
-    var item=["Belgien",19.9,602,4480,26,9,103,84,15.6];
+    var item = ["Litauen",24.5,132,518,35,0.1,13.4,null,25.9];
 
 
     var landername = item[0];
@@ -1201,3 +1201,5 @@ $(function () {
     });
 
 });
+
+    
